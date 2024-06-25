@@ -21,7 +21,7 @@
 - **Next.js**: React framework for server-side rendering and client-side routing.
 - **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
 - **React Hooks**: Used for state management and side effects in functional components.
-- **GitHub Pages**: Hosting platform for static websites and projects.
+- **Vercel**: Hosting platform for static websites and projects.
 - **Node.js**: Runtime environment for server-side logic and API handling.
 - **Nodemailer**: Node.js module for sending emails from the contact form.
 
