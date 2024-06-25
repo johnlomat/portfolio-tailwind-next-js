@@ -33,17 +33,23 @@ const ContactForm = () => {
     e.preventDefault();
     if (validate()) {
       try {
-        const response = await fetch("/api/sendEmail", {
+        // Fetch OAuth token from your server
+        const response = await fetch("/api/getOAuthToken");
+        const { accessToken } = await response.json();
+
+        // Send email using fetched access token
+        const emailResponse = await fetch("/api/sendEmail", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            Authorization: `Bearer ${accessToken}`,
           },
           body: JSON.stringify(formData),
         });
 
-        const result = await response.json();
+        const result = await emailResponse.json();
 
-        if (response.status === 200) {
+        if (emailResponse.status === 200) {
           setStatus("Email sent successfully!");
           setFormData({
             name: "",
@@ -61,7 +67,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-4">
+    <form onSubmit={handleSubmit} className="max-w-[37.5rem] w-full mx-auto p-4">
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
           Name:
@@ -88,7 +94,7 @@ const ContactForm = () => {
 
       {status && <p className="text-center text-red-500 text-xs italic mb-4">{status}</p>}
 
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-center">
         <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
           Send Message
         </button>

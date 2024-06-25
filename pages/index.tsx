@@ -5,6 +5,8 @@ import { faLinkedin, faCodepen, faGithub } from "@fortawesome/free-brands-svg-ic
 import Link from "next/link";
 import CustomHead from "../components/CustomHead";
 import Separator from "../components/ui/Separator";
+import ContactForm from "../components/forms/ContactForm";
+import { HeadingTwo } from "../components/ui/HeadingPreset";
 
 const HomePage: NextPage = () => {
   return (
@@ -52,9 +54,7 @@ const HomePage: NextPage = () => {
         <section className="py-24" id="about-me">
           <div className="container flex flex-wrap space-y-6">
             <div className="w-full flex flex-col items-center">
-              <div className="px-5 py-3 md:px-12 mb-20 inline-block border-4 border-black uppercase font-montserrat font-bold text-[1.875rem] tracking-[0.5rem] text-center">
-                <h2>About me</h2>
-              </div>
+              <HeadingTwo title="About me" />
               <div className="w-full max-w-[46.875rem] font-open-sans text-center text-[1.0625rem]">
                 <p className="mb-4">
                   I&apos;m John Lomat, an expert in WordPress and WooCommerce development with over 5 years of experience. My skill set includes extensive proficiency with Elementor, Divi, Bootstrap 5, SASS, jQuery, Tailwind CSS, Next.js, and
@@ -78,9 +78,7 @@ const HomePage: NextPage = () => {
         <section className="py-24 font-montserrat" id="skills">
           <div className="container flex flex-wrap space-y-6">
             <div className="w-full flex flex-col items-center">
-              <div className="px-5 py-3 md:px-12 mb-20 inline-block border-4 border-black text-[1.875rem] tracking-[0.5rem] uppercase font-bold text-center">
-                <h2>Skills</h2>
-              </div>
+              <HeadingTwo title="Skills" />
               <div className="w-full max-w-[52.75rem] text-left mb-20">
                 <div className="text-[1.875rem] tracking-[0.5rem] uppercase font-bold mb-10 text-center lg:text-left">
                   <h3>Using now:</h3>
@@ -268,6 +266,15 @@ const HomePage: NextPage = () => {
           </div>
         </section>
       </div>
+
+      <section className="py-24 bg-[radial-gradient(ellipse_at_center,_#FFFFFF_5%,#D7D7D7_70%)]" id="contact-me">
+        <div className="container flex flex-wrap space-y-6">
+          <div className="w-full flex flex-col items-center">
+            <HeadingTwo title="Contact" />
+            <ContactForm />
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
