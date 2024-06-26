@@ -100,7 +100,7 @@ export default function ContactForm() {
         </div>
         <Button
           type="submit"
-          className="w-full rounded border-2 border-black bg-transparent font-bold uppercase text-black hover:bg-black hover:text-white"
+          className="w-full rounded border-2 border-black bg-transparent p-2 font-bold uppercase text-black hover:bg-black hover:text-white"
         >
           Submit
         </Button>
