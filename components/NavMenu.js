@@ -1,76 +1,68 @@
 // components/NavMenu.js
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 const NavMenu = ({ isMenuOpen, toggleMenu }) => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isClient, setIsClient] = useState(false);
 
-  // Check if the device is mobile based on screen width
-  const checkIsMobile = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
-
-  // Listen to resize events to update isMobile state
   useEffect(() => {
-    checkIsMobile(); // Initial check
-    window.addEventListener("resize", checkIsMobile);
-    return () => window.removeEventListener("resize", checkIsMobile);
+    setIsClient(true);
   }, []);
 
   const handleClick = () => {
-    if (isMobile) {
+    if (isClient && window.innerWidth < 768) {
       toggleMenu(); // Close the menu on mobile screens
     }
   };
 
-  // Smooth scroll to anchor links and update URL hash
-  const handleSmoothScroll = (e, target) => {
-    e.preventDefault();
-
-    const element = document.getElementById(target);
-    if (element) {
-      element.scrollIntoView({
-        behavior: "smooth",
-        block: "start",
-      });
-    }
-
-    // Update the URL hash
-    window.history.pushState(null, null, `#${target}`);
-
-    handleClick(); // Close the menu after clicking
-  };
-
   return (
-    <div className={`${isMenuOpen ? "block" : "hidden"} md:block absolute md:relative top-4 md:top-0 right-4 md:right-0 w-[90%] md:w-auto max-w-[18.75rem] md:max-w-full z-20`}>
-      <button onClick={toggleMenu} className="text-slate-500 hover:text-slate-600 focus:outline-none md:hidden absolute top-4 right-4 w-8 h-8 flex items-center justify-center">
-        <FontAwesomeIcon icon={faTimes} className="w-5 h-5" />
+    <div
+      className={`${isMenuOpen ? "block" : "hidden"} absolute right-4 top-4 z-20 w-[90%] max-w-[18.75rem] md:relative md:right-0 md:top-0 md:block md:w-auto md:max-w-full`}
+    >
+      <button
+        onClick={toggleMenu}
+        className="absolute right-4 top-4 flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 focus:outline-none md:hidden"
+      >
+        <FontAwesomeIcon icon={faTimes} className="h-5 w-5" />
       </button>
-      <ul className="md:flex space-y-4 md:space-y-0 space-x-0 md:space-x-12 2xl:space-x-20 font-montserrat rounded-lg md:rounded-none shadow-lg md:shadow-none bg-white md:bg-transparent md:flex-row flex-col items-center p-6 md:p-0">
+      <ul className="flex-col items-center space-x-0 space-y-4 rounded-lg bg-white p-6 font-montserrat shadow-lg md:flex md:flex-row md:space-x-12 md:space-y-0 md:rounded-none md:bg-transparent md:p-0 md:shadow-none 2xl:space-x-20">
         <li>
-          <a href="#about-me" onClick={(e) => handleSmoothScroll(e, "about-me")} className="cursor-pointer text-[#212121] md:text-white hover:text-gray-300 font-bold">
+          <Link
+            href="#about-me"
+            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            onClick={handleClick}
+          >
             About me
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#skills" onClick={(e) => handleSmoothScroll(e, "skills")} className="cursor-pointer text-[#212121] md:text-white hover:text-gray-300 font-bold">
+          <Link
+            href="#skills"
+            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            onClick={handleClick}
+          >
             Skills
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#projects" onClick={(e) => handleSmoothScroll(e, "projects")} className="cursor-pointer text-[#212121] md:text-white hover:text-gray-300 font-bold">
+          <Link
+            href="#projects"
+            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            onClick={handleClick}
+          >
             Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a
+          <Link
             href="#contact-me"
-            onClick={(e) => handleSmoothScroll(e, "contact-me")}
-            className="cursor-pointer bg-none md:bg-white text-[#212121] md:text-black md:hover:bg-black md:hover:text-white md:rounded-full md:py-3 md:px-4 font-bold md:uppercase"
+            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            onClick={handleClick}
           >
             Contact me
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

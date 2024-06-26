@@ -42,20 +42,34 @@ const Header = () => {
   }, [isMenuOpen]);
 
   return (
-    <header className="bg-[#969696] xl:bg-transparent py-4 w-full static md:absolute z-10">
-      <nav className="flex items-center justify-between container mx-auto">
-        <div className="flex items-center w-full md:w-auto max-w-[4.375rem] md:max-w-full">
-          <Link href="/" className="text-white text-xl">
-            <Image src="/images/john-logo.svg" alt="John Lomat logo" width={100} height={62} className="brightness-[100] md:brightness-0" />
+    <header className="static z-10 w-full bg-[#969696] py-4 md:absolute xl:bg-transparent">
+      <nav className="container mx-auto flex items-center justify-between">
+        <div className="flex w-full max-w-[4.375rem] items-center md:w-auto md:max-w-full">
+          <Link href="/" className="text-xl text-white">
+            <Image
+              src="/images/john-logo.svg"
+              alt="John Lomat logo"
+              width={100}
+              height={62}
+              className="brightness-[100] md:brightness-0"
+            />
           </Link>
         </div>
         <div className="md:hidden">
-          <button onClick={toggleMenu} className="text-white focus:outline-none">
-            <FontAwesomeIcon icon={faBars} className="w-6 h-6" />
+          <button
+            onClick={toggleMenu}
+            className="text-white focus:outline-none"
+          >
+            <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
           </button>
         </div>
 
-        {isMenuOpen && <div className="fixed z-10 inset-0 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80" onClick={toggleMenu}></div>}
+        {isMenuOpen && (
+          <div
+            className="fixed inset-0 z-10 bg-black/20 backdrop-blur-sm dark:bg-slate-900/80"
+            onClick={toggleMenu}
+          ></div>
+        )}
 
         <NavMenu isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
       </nav>

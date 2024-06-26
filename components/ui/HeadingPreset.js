@@ -2,7 +2,7 @@
 
 export const HeadingTwo = ({ title }) => {
   return (
-    <div className="px-5 py-3 md:px-12 mb-20 inline-block border-4 border-black text-[1.875rem] tracking-[0.5rem] uppercase font-bold text-center">
+    <div className="inline-block border-4 border-black px-5 py-3 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] md:px-12">
       <h2>{title}</h2>
     </div>
   );

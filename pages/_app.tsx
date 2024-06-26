@@ -28,7 +28,9 @@ const open_sans = Open_Sans({
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className={`page-container ${raleway.variable} ${montserrat.variable} ${open_sans.variable}`}>
+    <div
+      className={`page-container ${raleway.variable} ${montserrat.variable} ${open_sans.variable}`}
+    >
       <Header />
 
       <Component {...pageProps} />
