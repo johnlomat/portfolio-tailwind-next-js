@@ -1,7 +1,7 @@
 // components/SkillsSection.js
 import Image from "next/image";
 import { usingNow, learning, otherSkills } from "../../data/skills";
-import { HeadingTwo } from "../../components/ui/HeadingPreset";
+import { HeadingTwo } from "../ui/HeadingPreset";
 
 const SkillItem = ({ src, alt, width, height, name }) => (
   <div className="flex w-1/2 flex-col items-center p-[0.9375rem] sm:p-0 md:w-1/3 lg:w-1/4">

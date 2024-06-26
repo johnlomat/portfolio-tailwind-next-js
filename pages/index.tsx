@@ -68,7 +68,7 @@ const HomePage: NextPage = () => {
           </div>
           <div className="mt-[0!important] flex w-full justify-center md:w-1/2">
             <Image
-              src="images/john-lomat-profile-picture.png"
+              src="/images/john-lomat-profile-picture.png"
               alt="John Lomat profile picture"
               width={515}
               height={872}
