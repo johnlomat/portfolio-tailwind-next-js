@@ -9,14 +9,14 @@ const radialGradientPlugin = plugin(
           "background-image": `radial-gradient(${value},var(--tw-gradient-stops))`,
         }),
       },
-      { values: theme("radialGradients") }
+      { values: theme("radialGradients") },
     );
   },
   {
     theme: {
       radialGradients: _presets(),
     },
-  }
+  },
 );
 
 /**
@@ -36,14 +36,21 @@ function _presets() {
     br: "bottom right",
   };
   let result = {};
-  for (const shape of shapes) for (const [posName, posValue] of Object.entries(pos)) result[`${shape}-${posName}`] = `${shape} at ${posValue}`;
+  for (const shape of shapes)
+    for (const [posName, posValue] of Object.entries(pos))
+      result[`${shape}-${posName}`] = `${shape} at ${posValue}`;
 
   return result;
 }
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}", "./app/**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/flowbite-react/lib/**/*.js",
+  ],
   theme: {
     container: {
       center: true,
@@ -57,5 +64,5 @@ module.exports = {
       },
     },
   },
-  plugins: [radialGradientPlugin],
+  plugins: [radialGradientPlugin, require("flowbite/plugin")],
 };

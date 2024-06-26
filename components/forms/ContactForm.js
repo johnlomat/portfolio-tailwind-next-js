@@ -1,7 +1,22 @@
 // components/ContactForm.js
+"use client";
+
+import { useState } from "react";
+import {
+  Toast,
+  ToastToggle,
+  Button,
+  Label,
+  TextInput,
+  Textarea,
+} from "flowbite-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCircleCheck,
+  faCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
 import useContactForm from "../../hooks/useContactForm";
 import sendEmail from "../../lib/sendEmail";
-import { useState } from "react";
 
 export default function ContactForm() {
   const { values, handleChange } = useContactForm();
@@ -13,11 +28,16 @@ export default function ContactForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const req = await sendEmail(values.email, values.subject, values.message);
-      if (req.status === 250) {
+      const req = await sendEmail(values.name, values.email, values.message);
+      if (req.status === 200) {
         setResponseMessage({
           isSuccessful: true,
           message: "Thank you for your message.",
+        });
+      } else {
+        setResponseMessage({
+          isSuccessful: false,
+          message: "Oops something went wrong. Please try again.",
         });
       }
     } catch (e) {
@@ -30,60 +50,73 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex w-full max-w-[31.25rem] items-center justify-center">
+    <div className="flex w-full max-w-[31.25rem] flex-col items-center justify-center space-y-6">
       <form
         onSubmit={handleSubmit}
-        className="w-full rounded bg-white p-8 font-montserrat font-bold uppercase shadow-md"
+        className="w-full rounded bg-white p-8 font-montserrat uppercase shadow-md"
       >
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="name">
-            Name
-          </label>
-          <input
+          <div className="mb-2 block">
+            <Label htmlFor="name" value="Name" className="font-bold" />
+          </div>
+          <TextInput
             type="text"
             name="name"
             value={values.name}
             onChange={handleChange}
             id="name"
-            className="w-full rounded border px-3 py-2"
             required
+            className="font-open-sans"
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="email">
-            Email
-          </label>
-          <input
+          <div className="mb-2 block">
+            <Label htmlFor="email" value="Email" className="font-bold" />
+          </div>
+          <TextInput
             type="email"
             name="email"
             value={values.email}
             onChange={handleChange}
             id="email"
-            className="w-full rounded border px-3 py-2"
             required
+            className="font-open-sans"
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700" htmlFor="message">
-            Message
-          </label>
-          <textarea
+          <div className="mb-2 block">
+            <Label htmlFor="message" value="Message" className="font-bold" />
+          </div>
+          <Textarea
             name="message"
             value={values.message}
             onChange={handleChange}
             id="message"
-            className="w-full rounded border px-3 py-2"
-            rows="4"
+            placeholder="Leave a message..."
             required
+            rows={4}
+            className="font-open-sans"
           />
         </div>
-        <button
+        <Button
           type="submit"
-          className="w-full rounded border-2 border-black bg-transparent px-4 py-2 font-bold uppercase text-black hover:bg-black hover:text-white"
+          className="w-full rounded border-2 border-black bg-transparent font-bold uppercase text-black hover:bg-black hover:text-white"
         >
-          Send
-        </button>
+          Submit
+        </Button>
       </form>
+      {responseMessage.message && (
+        <Toast className="fixed bottom-4 left-1/2 z-10 m-0 w-auto -translate-x-1/2 p-4 shadow-md">
+          <FontAwesomeIcon
+            icon={responseMessage.isSuccessful ? faCircleCheck : faCircleXmark}
+            className={`text-2xl ${responseMessage.isSuccessful ? "text-green-400" : "text-red-600"}`}
+          />
+          <div className="ml-3 text-sm font-normal">
+            {responseMessage.message}
+          </div>
+          <ToastToggle className="flex items-center justify-center" />
+        </Toast>
+      )}
     </div>
   );
 }

@@ -31,7 +31,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         <li>
           <Link
             href="#about-me"
-            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
           >
             About me
@@ -40,7 +40,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         <li>
           <Link
             href="#skills"
-            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
           >
             Skills
@@ -49,7 +49,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         <li>
           <Link
             href="#projects"
-            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
           >
             Projects
@@ -58,7 +58,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         <li>
           <Link
             href="#contact-me"
-            className="cursor-pointer font-bold text-[#212121] hover:text-gray-300 md:text-white"
+            className="rounded-full bg-none p-0 font-bold text-[#212121] hover:text-gray-300 md:bg-white md:px-6 md:py-3 md:text-black md:hover:bg-black md:hover:text-white"
             onClick={handleClick}
           >
             Contact me
