@@ -16,7 +16,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#1A1A1A] py-12 font-montserrat">
+    <footer className="bg-neutral-900 py-12 font-montserrat">
       <div className="container flex flex-wrap space-y-6">
         <div className="flex w-full flex-col items-center justify-center">
           <button

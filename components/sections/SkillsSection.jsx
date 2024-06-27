@@ -18,7 +18,7 @@ const SkillsSection = () => (
         <HeadingTwo title="Skills" />
 
         <div className="w-full max-w-[52.75rem] text-left">
-          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] lg:text-left">
+          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] text-neutral-900 lg:text-left">
             <h3>Using now:</h3>
           </div>
           <div className="flex flex-wrap gap-y-12">
@@ -29,7 +29,7 @@ const SkillsSection = () => (
         </div>
 
         <div className="w-full max-w-[52.75rem] text-left">
-          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] lg:text-left">
+          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] text-neutral-900 lg:text-left">
             <h3>Learning:</h3>
           </div>
           <div className="flex flex-wrap gap-y-12">
@@ -40,7 +40,7 @@ const SkillsSection = () => (
         </div>
 
         <div className="w-full max-w-[52.75rem] text-left">
-          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] lg:text-left">
+          <div className="mb-10 text-center text-[1.875rem] font-bold uppercase tracking-[0.5rem] text-neutral-900 lg:text-left">
             <h3>Other skills:</h3>
           </div>
           <div className="flex flex-wrap gap-y-12">

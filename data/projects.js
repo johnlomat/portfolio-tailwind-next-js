@@ -7,38 +7,34 @@ export const projects = [
     scope_list_html:
       "<li><strong>Divi Page Builder Integration</strong>: Leveraged the powerful Divi page builder to create visually stunning and customizable pages effortlessly, empowering content managers to design and edit content with ease.</li><li><strong>Ninja Forms Integration</strong>: Seamlessly integrated Ninja Forms to facilitate user interaction and lead generation, allowing visitors to submit inquiries, applications, and feedback directly through intuitive andcustomizable forms.</li><li><strong>Custom Post Types and Taxonomies</strong>: Utilizing Divi Engine, we created custom post types such as Courses, Programs, and Events, along with corresponding taxonomies for efficient content organization.</li><li><strong>Filtered Posts with Divi Engine</strong>: Implemented Divi Engine's functionality to create filtered post grids, enabling users to easily sort and find relevant content based on categories, tags, or customtaxonomies.</li><li><strong>Dynamic Page Creation with Divi Engine and ACF</strong>: Utilized the dynamic page creation feature of Divi Engine in conjunction with Advanced Custom Fields (ACF) to generate dynamic pages programmatically,automating the creation and management of content-rich pages such as faculty profiles, course listings, and event schedules.</li><li><strong>Advanced Custom Fields Integration</strong>: Integrated Advanced Custom Fields to empower content managers with the ability to add custom meta-data fields to various content types, enabling granular control overcontent presentation.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li><li><strong>Improved Performance</strong>: Implemented optimization techniques such as image compression, lazy loading, and caching to enhance website speed and performance.</li><li><strong>Enhanced User Experience</strong>: Redesigned the website’s navigation structure and user interface to improve accessibility and streamline user journeys.</li>",
     image: {
-      optimized:
-        "assets/blurry-load/images/Wawasan-Open-University-Optimized.jpg",
       full: "/images/project-screenshots/Wawasan-Open-University.jpg",
       alt_text: "Wawasan Open University Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1D2fjPgL4BgG08X1yE1rpXHAgdPhBvEWA",
-      demo_link: "https://www.wou.edu.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1D2fjPgL4BgG08X1yE1rpXHAgdPhBvEWA",
+    demo_link: "https://www.wou.edu.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Experior",
@@ -48,36 +44,33 @@ export const projects = [
     scope_list_html:
       "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Menicon's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Dynamic Job Listings with CPT UI</strong>: Using CPT UI, I created custom post types for job listings, allowing Menicon's HR team to effortlessly manage and update job openings directly from the WordPress dashboard. This dynamic functionality enhances the website's scalability and maintenance efficiency.</li><li><strong>Interactive Application Forms</strong>: Integrating Ninja form builder plugin, I developed user-friendly application forms with advanced customization options, streamlining the application process and capturing essential candidate information accurately.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, enhancing overall performance and user engagement.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Experior-Optimized.jpg",
       full: "/images/project-screenshots/Experior.jpg",
       alt_text: "Experior Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link: "",
-      demo_link: "https://experior.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link: "",
+    demo_link: "https://experior.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Menicon",
@@ -87,37 +80,34 @@ export const projects = [
     scope_list_html:
       "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Menicon's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Dynamic Job Listings with CPT UI</strong>: Using CPT UI, I created custom post types for job listings, allowing Menicon's HR team to effortlessly manage and update job openings directly from the WordPress dashboard. This dynamic functionality enhances the website's scalability and maintenance efficiency.</li><li><strong>Interactive Application Forms</strong>: Integrating Ninja form builder plugin, I developed user-friendly application forms with advanced customization options, streamlining the application process and capturing essential candidate information accurately.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, enhancing overall performance and user engagement.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Menicon-Optimized.jpg",
       full: "/images/project-screenshots/Menicon.jpg",
       alt_text: "Menicon Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1ZcDZ0Qn_abMQ-gKdDBPrwEdvUWsXosvq",
-      demo_link: "https://www.menicon.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1ZcDZ0Qn_abMQ-gKdDBPrwEdvUWsXosvq",
+    demo_link: "https://www.menicon.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "GS9 Club Indonesia",
@@ -127,37 +117,34 @@ export const projects = [
     scope_list_html:
       "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Grand Seiko Indonesia's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Dynamic Blog Posts</strong>: Utilizing WordPress's built-in post types, I created dynamic blog posts that allow Grand Seiko Indonesia's team to effortlessly publish and manage content directly from the WordPress dashboard. This ensures flexibility and ease of content management without the need for additional plugins.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, optimizing overall performance and enhancing user engagement.</li>",
     image: {
-      optimized: "assets/blurry-load/images/GS9-club-indonesia-Optimized.jpg",
       full: "/images/project-screenshots/GS9-club-indonesia.jpg",
       alt_text: "GS9 Club Indonesia Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1JvoZlz1YHOwoBICJUfDkNTAuZXJ1OYec",
-      demo_link: "https://www.grandseikogs9club.id/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1JvoZlz1YHOwoBICJUfDkNTAuZXJ1OYec",
+    demo_link: "https://www.grandseikogs9club.id/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Grand Seiko Online Store",
@@ -167,42 +154,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Setup payment gateway.</li><li>Develop mockup design pages in Divi page builder.</li><li>Form integration with ninja form.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized:
-        "assets/blurry-load/images/Grand-Seiko-Online-Store-Optimized.jpg",
       full: "/images/project-screenshots/Grand-Seiko-Online-Store.jpg",
       alt_text: "Grand Seiko Online Store Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1KaKLNy6wLulkLImDLgdrXNfp5b0TA_3w",
-      demo_link: "https://grandseikoboutiqueapac.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1KaKLNy6wLulkLImDLgdrXNfp5b0TA_3w",
+    demo_link: "https://grandseikoboutiqueapac.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Retrospective Media",
@@ -212,37 +195,34 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Elementor page builder.</li><li>Mobile optimization</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Retrospective-Media-Optimized.jpg",
       full: "/images/project-screenshots/Retrospective-Media.jpg",
       alt_text: "Retrospective Media Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1aC3Vysez-QcyELZBJVhlvrni-vTvpjmj",
-      demo_link: "https://retrospectivemedia.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1aC3Vysez-QcyELZBJVhlvrni-vTvpjmj",
+    demo_link: "https://retrospectivemedia.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+    ],
   },
   {
     title: "Apple Crider",
@@ -252,37 +232,34 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Elementor page builder.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Apple-Crider-Optimized.jpg",
       full: "/images/project-screenshots/Apple-Crider.jpg",
       alt_text: "Apple Crider Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=13LZOHzYJP8rOOiHq7DBEob5t8F6sO23I",
-      demo_link: "https://applecrider.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=13LZOHzYJP8rOOiHq7DBEob5t8F6sO23I",
+    demo_link: "https://applecrider.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+    ],
   },
   {
     title: "The Spa Shop",
@@ -292,41 +269,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Setup payment gateway.</li><li>Develop mockup design pages in Divi page builder.</li><li>Form integration with ninja form.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/The-Spa-Shop-Optimized.jpg",
       full: "/images/project-screenshots/The-Spa-Shop.jpg",
       alt_text: "The Spa Shop Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1bmkBfmflCZ7-9DCQZ976LL_qnn_bzHTt",
-      demo_link: "https://spashopasia.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1bmkBfmflCZ7-9DCQZ976LL_qnn_bzHTt",
+    demo_link: "https://spashopasia.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Crypto Conference LA",
@@ -336,41 +310,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Visual Composer page builder.</li><li>Form integration with SendGrid.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Crypto-Conference-LA-Optimized.jpg",
       full: "/images/project-screenshots/Crypto-Conference-LA.jpg",
       alt_text: "Crypto Conference LA Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/drive/folders/1c4HThk7tn1R15qi4_DWdqsFLETj6S9Uv?usp=sharing",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Visual-Composer-logo.svg)",
-          title: "Visual Composer",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/javascript.svg)",
-          title: "JavaScript",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/drive/folders/1c4HThk7tn1R15qi4_DWdqsFLETj6S9Uv?usp=sharing",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/visual-composer-logo.svg",
+        title: "Visual Composer",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/javascript-logo.svg",
+        title: "JavaScript",
+      },
+    ],
   },
   {
     title: "Creators Agency",
@@ -380,37 +351,34 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Elementor page builder.</li><li>Mobile optimization.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Creators-Agency-Optimized.jpg",
       full: "/images/project-screenshots/Creators-Agency.jpg",
       alt_text: "Creators Agency Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=154DNGB4w3CUFVLRYkG0ASJcRmasWxaUl",
-      demo_link: "https://creatorsagency.co/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=154DNGB4w3CUFVLRYkG0ASJcRmasWxaUl",
+    demo_link: "https://creatorsagency.co/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+    ],
   },
   {
     title: "GoFresh",
@@ -420,41 +388,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Setup payment gateway.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/GoFresh-Optimized.jpg",
       full: "/images/project-screenshots/GoFresh.jpg",
       alt_text: "GoFresh Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1EYCCvA39Gj9RlPmIha-krBifOrAXFxMA",
-      demo_link: "https://gofresh.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1EYCCvA39Gj9RlPmIha-krBifOrAXFxMA",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Hung Cheong Jewellery & Watch",
@@ -464,42 +429,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Use the ACF plugin on the category and product page template.</li><li>Form integration with ninja form.</li><li>Setup WPML translation.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized:
-        "assets/blurry-load/images/Hung-Cheong-Jewellery-Watch-Optimized.jpg",
       full: "/images/project-screenshots/Hung-Cheong-Jewellery-Watch.jpg",
       alt_text: "Hung Cheong Jewellery & Watch Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1Oko1yQWGxd07IGQFDgYUrGpUJw-fe7G6",
-      demo_link: "https://hungcheong.com.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1Oko1yQWGxd07IGQFDgYUrGpUJw-fe7G6",
+    demo_link: "https://hungcheong.com.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Kirk Paige Collections",
@@ -509,42 +470,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup Storefront theme and WooCommerce platform.</li><li>Develop mockup design pages in Elementor page builder.</li><li>Customized WooCommerce pages with custom CSS.</li><li>Custom hooks for WooCommerce.</li><li>Setup payment gateway.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized:
-        "assets/blurry-load/images/Kirk-Paige-Collections-Optimized.jpg",
       full: "/images/project-screenshots/Kirk-Paige-Collections.jpg",
       alt_text: "Kirk Paige Collections Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1-hcn2RsbMvUAwkrq4ZWiOHPlx7JP1vLs",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1-hcn2RsbMvUAwkrq4ZWiOHPlx7JP1vLs",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+    ],
   },
   {
     title: "Pumpcan",
@@ -554,41 +511,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Pumpcan-Optimized.jpg",
       full: "/images/project-screenshots/Pumpcan.jpg",
       alt_text: "Pumpcan Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1ra4ZEfZbxwY9fXyZgcny875BpzBXp3tj",
-      demo_link: "https://pumpcan.ca/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1ra4ZEfZbxwY9fXyZgcny875BpzBXp3tj",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Astro NJOI",
@@ -598,41 +552,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Smart Slider banner.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Astro-NJOI-Optimized.jpg",
       full: "/images/project-screenshots/Astro-NJOI.jpg",
       alt_text: "Astro NJOI Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1XaFlItz1eekY47nlKLdqIBXy2HNedZSx",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1XaFlItz1eekY47nlKLdqIBXy2HNedZSx",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Watatime",
@@ -642,41 +593,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Use the ACF plugin on the category and product page template.</li><li>Form integration with ninja form.</li><li>Setup payment gateway.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Watatime-Optimized.jpg",
       full: "/images/project-screenshots/Watatime.jpg",
       alt_text: "Watatime Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1UzCAyzNVtOtrZSQXnKbRcP1BNOWdwGlP",
-      demo_link: "https://watatime.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1UzCAyzNVtOtrZSQXnKbRcP1BNOWdwGlP",
+    demo_link: "https://watatime.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Astro Broadband",
@@ -686,41 +634,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Smart Slider banner.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Astro-Broadband-Optimized.jpg",
       full: "/images/project-screenshots/Astro-Broadband.jpg",
       alt_text: "Astro Broadband Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1OzXuu5XipXn39lI9YVImgkPuhfi4DS_k",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1OzXuu5XipXn39lI9YVImgkPuhfi4DS_k",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "MASCO Co-working Space",
@@ -730,41 +675,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Smart Slider to showcase the halls and rooms.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/MASCO-Optimized.jpg",
       full: "/images/project-screenshots/MASCO.jpg",
       alt_text: "MASCO Co-working Space Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1Zx8-I1lHar76DFqIUN8rJDtcFoZIwVn7",
-      demo_link: "https://masco.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1Zx8-I1lHar76DFqIUN8rJDtcFoZIwVn7",
+    demo_link: "https://masco.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Woo Hing Brothers",
@@ -774,41 +716,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Use the ACF plugin on the category and product page template.</li><li>Form integration with ninja form.</li><li>Setup WPML translation.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Woo-Hing-Brothers-Optimized.jpg",
       full: "/images/project-screenshots/Woo-Hing-Brothers.jpg",
       alt_text: "Woo Hing Brothers Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1_r5PZjKB_ZCMf7thN1nYNy4vyHSpTxca",
-      demo_link: "https://woohingwatches.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1_r5PZjKB_ZCMf7thN1nYNy4vyHSpTxca",
+    demo_link: "https://woohingwatches.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Active Swim",
@@ -818,41 +757,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Setup subscription payment gateway.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Active-Swim-Optimized.jpg",
       full: "/images/project-screenshots/Active-Swim.jpg",
       alt_text: "Active Swim Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1mwNSUC1lQQyxDL5CgtK3Do6MzCIYuS1d",
-      demo_link: "https://www.swimmingschool.com.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1mwNSUC1lQQyxDL5CgtK3Do6MzCIYuS1d",
+    demo_link: "https://www.swimmingschool.com.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Vincent Watch",
@@ -862,41 +798,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup WooCommerce platform.</li><li>Develop mockup design pages in Divi page builder.</li><li>Use the ACF plugin on the category and product page template.</li><li>Form integration with ninja form.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Vincent-Watch-Optimized.jpg",
       full: "/images/project-screenshots/Vincent-Watch.jpg",
       alt_text: "Vincent Watch Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1EEm434QPWfSxSUet2-qtE1voZBEn_2aW",
-      demo_link: "https://tudor.vincentwatch.com.sg/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1EEm434QPWfSxSUet2-qtE1voZBEn_2aW",
+    demo_link: "https://tudor.vincentwatch.com.sg/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Talent Trust",
@@ -906,41 +839,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Setup payment gateway.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Talent-Trust-Optimized.jpg",
       full: "/images/project-screenshots/Talent-Trust.jpg",
       alt_text: "Talent Trust Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1qKepYxivBCTv-Pq56TarZnU5kgn6Ge-R",
-      demo_link: "https://www.talent-trust.com/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1qKepYxivBCTv-Pq56TarZnU5kgn6Ge-R",
+    demo_link: "https://www.talent-trust.com/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Creative Campus",
@@ -950,41 +880,38 @@ export const projects = [
     scope_list_html:
       "<li>Develop mockup design pages in Divi page builder.</li><li>Setup subscription payment gateway.</li><li>Form integration with ninja form.</li><li>Elements animation.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Creative-Campus-Optimized.jpg",
       full: "/images/project-screenshots/Creative-Campus.jpg",
       alt_text: "Creative Campus Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1inIeGD4ky0JQj_RGk1v581Nf0yuO3Y9G",
-      demo_link: "https://www.creativecampus.com.my/",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/Divi-logo.svg)",
-          title: "Divi",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1inIeGD4ky0JQj_RGk1v581Nf0yuO3Y9G",
+    demo_link: "https://www.creativecampus.com.my/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
   },
   {
     title: "Pamilya Store",
@@ -994,41 +921,38 @@ export const projects = [
     scope_list_html:
       "<li>Setup Storefront theme and WooCommerce platform.</li><li>Develop homepage using the Elementor page builder.</li><li>Customized WooCommerce pages with custom CSS.</li><li>Customized checkout fields.</li><li>Setup payment gateway.</li><li>Optimize page speed with LiteSpeed Cache.</li><li>Responsive design.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Pamilya-Store-Optimized.jpg",
       full: "/images/project-screenshots/Pamilya-Store.jpg",
       alt_text: "Pamilya Store Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=13iWN3sZxYbE3-OlRxLJfOWtTZyfVnXiu",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/woocommerce-seeklogo.com.svg)",
-          title: "WooCommerce",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/litespeed.svg)",
-          title: "LiteSpeed",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=13iWN3sZxYbE3-OlRxLJfOWtTZyfVnXiu",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/woocommerce-logo.svg",
+        title: "WooCommerce",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/litespeed-logo.svg",
+        title: "LiteSpeed",
+      },
+    ],
   },
   {
     title: "LAPEI Travel & Tour Services",
@@ -1037,38 +961,34 @@ export const projects = [
     scope_list_html:
       "<li>Customized theme in WordPress.</li><li>Elementor page builder.</li><li>AJAX form.</li><li>Responsive design.</li><li>Deployed in 000webhost free hosting plan.</li>",
     image: {
-      optimized:
-        "assets/blurry-load/images/LAPEI-Travel-Tours-Services-Optimized.jpg",
       full: "/images/project-screenshots/LAPEI-Travel-Tour-Services.jpg",
       alt_text: "LAPEI - Travel & Tour Services Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=1U2QpAL9NekAPBnMu9utiGOeMiqPokInH",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/wordpress.svg)",
-          title: "WordPress",
-        },
-        {
-          logo: "background-image:url(assets/logo/elementor.svg)",
-          title: "Elementor",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/000webhost_logo.svg)",
-          title: "000webhost",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=1U2QpAL9NekAPBnMu9utiGOeMiqPokInH",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/elementor-logo.svg",
+        title: "Elementor",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/000webhost-logo.svg",
+        title: "000webhost",
+      },
+    ],
   },
   {
     title: "Artesyn Embedded Power",
@@ -1078,40 +998,37 @@ export const projects = [
     scope_list_html:
       "<li>Login system for individual user.</li><li>Add a model product for subjected detection data with timestamp.</li><li>Upload individual photos for model product.</li><li>User can delete model product including their defect data.</li><li>Using AJAX to create a monthly defect data.</li><li>Member information view list.</li><li>Responsive design.</li><li>Deployed in Heroku cloud-platform free hosting plan.</li>",
     image: {
-      optimized: "assets/blurry-load/images/Artesyn-Model-View-Optimized.jpg",
       full: "/images/project-screenshots/Artesyn-Model-View.jpg",
       alt_text: "Artesyn Embedded Power Portfolio Thumbnail",
     },
-    modal_content: {
-      screenshot_link:
-        "https://drive.google.com/folderview?id=14sCGv1MsJv5SiYlgWWvB8l0OzNrKtBKV",
-      demo_link: "",
-      techStack: [
-        {
-          logo: "background-image:url(assets/logo/css3.svg)",
-          title: "CSS3",
-        },
-        {
-          logo: "background-image:url(assets/logo/google-mdl-logo-1.svg)",
-          title: "Google Material Design Lite",
-        },
-        {
-          logo: "background-image:url(assets/logo/jquery.svg)",
-          title: "jQuery",
-        },
-        {
-          logo: "background-image:url(assets/logo/php.svg)",
-          title: "PHP",
-        },
-        {
-          logo: "background-image:url(assets/logo/MySQL.svg)",
-          title: "MySQL",
-        },
-        {
-          logo: "background-image:url(assets/logo/heroku.svg)",
-          title: "Heroku",
-        },
-      ],
-    },
+    screenshot_link:
+      "https://drive.google.com/folderview?id=14sCGv1MsJv5SiYlgWWvB8l0OzNrKtBKV",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/google-mdl-logo.svg",
+        title: "Google Material Design Lite",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/heroku-logo.svg",
+        title: "Heroku",
+      },
+    ],
   },
 ];

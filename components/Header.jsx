@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import NavMenu from "./NavMenu";
@@ -7,6 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -40,8 +42,17 @@ const Header = () => {
     }
   }, [isMenuOpen]);
 
+  // Determine the background color based on the current route
+  const headerBgColor =
+    router.pathname === "/" ? "bg-[#969696] xl:bg-transparent" : "bg-[#969696]";
+
+  const logoColor =
+    router.pathname === "/"
+      ? "brightness-[100] md:brightness-0"
+      : "brightness-[100]";
+
   return (
-    <header className="static z-10 w-full bg-[#969696] py-4 md:absolute xl:bg-transparent">
+    <header className={`static z-10 w-full ${headerBgColor} py-4 md:absolute`}>
       <nav className="container mx-auto flex items-center justify-between">
         <div className="flex w-full max-w-[4.375rem] items-center md:w-auto md:max-w-full">
           <Link href="/" className="text-xl text-white">
@@ -50,7 +61,7 @@ const Header = () => {
               alt="John Lomat logo"
               width={100}
               height={62}
-              className="brightness-[100] md:brightness-0"
+              className={`${logoColor}`}
             />
           </Link>
         </div>

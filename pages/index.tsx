@@ -27,7 +27,7 @@ const HomePage: NextPage = () => {
         <div className="container flex flex-wrap space-y-6">
           <div className="bg-top-center absolute bottom-0 left-0 flex w-full items-center bg-[url('/images/rectangle-82.svg')] bg-cover bg-no-repeat px-4 py-[15%] md:static md:bottom-auto md:left-auto md:w-1/2 md:bg-none md:p-0">
             <div className="relative flex w-full flex-col pe-12 pt-[5.625rem] font-raleway md:w-auto md:p-0">
-              <h1 className="mb-0 text-[1.25rem] font-bold text-white md:mb-4 md:text-[2.5rem] md:text-black">
+              <h1 className="mb-0 text-[1.25rem] font-bold text-white md:mb-4 md:text-[2.5rem] md:text-neutral-900">
                 Hi, I am{" "}
                 <span className="mt-0 block text-[2.1875rem] leading-none md:mt-12 md:text-[5rem]">
                   John Lomat

@@ -52,11 +52,15 @@ export default function ContactForm() {
     <div className="flex w-full max-w-[31.25rem] flex-col items-center justify-center space-y-6">
       <form
         onSubmit={handleSubmit}
-        className="w-full rounded bg-white p-8 font-montserrat uppercase shadow-md"
+        className="w-full rounded bg-white p-8 uppercase shadow-md"
       >
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label htmlFor="name" value="Name" className="font-bold" />
+            <Label
+              htmlFor="name"
+              value="Name"
+              className="font-montserrat font-bold"
+            />
           </div>
           <TextInput
             type="text"
@@ -70,7 +74,11 @@ export default function ContactForm() {
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label htmlFor="email" value="Email" className="font-bold" />
+            <Label
+              htmlFor="email"
+              value="Email"
+              className="font-montserrat font-bold"
+            />
           </div>
           <TextInput
             type="email"
@@ -84,7 +92,11 @@ export default function ContactForm() {
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label htmlFor="message" value="Message" className="font-bold" />
+            <Label
+              htmlFor="message"
+              value="Message"
+              className="font-montserrat font-bold"
+            />
           </div>
           <Textarea
             name="message"
@@ -97,7 +109,10 @@ export default function ContactForm() {
             className="font-open-sans"
           />
         </div>
-        <Button type="submit" className="w-full uppercase">
+        <Button
+          type="submit"
+          className="w-full border border-black bg-neutral-700 font-montserrat font-bold uppercase text-white transition ease-in-out enabled:hover:bg-cyan-700"
+        >
           Submit
         </Button>
       </form>
