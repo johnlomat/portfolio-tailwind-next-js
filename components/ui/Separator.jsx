@@ -1,4 +1,3 @@
-// components/Separator.js
 import Image from "next/image";
 
 const Separator = () => {

@@ -12,6 +12,7 @@ import Separator from "../components/ui/Separator";
 import ContactForm from "../components/forms/ContactForm";
 import { HeadingTwo } from "../components/ui/HeadingPreset";
 import SkillsSection from "../components/sections/SkillsSection";
+import ProjectsSection from "../components/sections/ProjectsSection";
 
 const HomePage: NextPage = () => {
   return (
@@ -78,7 +79,7 @@ const HomePage: NextPage = () => {
       </section>
 
       <div className="bg-[radial-gradient(ellipse_at_center,_#FFFFFF_5%,#D7D7D7_70%)]">
-        <section className="py-24" id="about-me">
+        <section className="relative py-24" id="about-me">
           <div className="container flex flex-wrap space-y-6">
             <div className="flex w-full flex-col items-center space-y-20">
               <HeadingTwo title="About me" />
@@ -117,8 +118,10 @@ const HomePage: NextPage = () => {
         <SkillsSection />
       </div>
 
+      <ProjectsSection />
+
       <section
-        className="bg-[radial-gradient(ellipse_at_center,_#FFFFFF_5%,#D7D7D7_70%)] py-24"
+        className="relative bg-[radial-gradient(ellipse_at_center,_#FFFFFF_5%,#D7D7D7_70%)] py-24"
         id="contact-me"
       >
         <div className="container flex flex-wrap space-y-6">

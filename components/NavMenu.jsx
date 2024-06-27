@@ -1,4 +1,3 @@
-// components/NavMenu.js
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -58,7 +57,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         <li>
           <Link
             href="#contact-me"
-            className="rounded-full bg-none p-0 font-bold text-[#212121] hover:text-gray-300 md:bg-white md:px-6 md:py-3 md:text-black md:hover:bg-black md:hover:text-white"
+            className="rounded-full bg-none p-0 font-bold normal-case text-[#212121] transition ease-in-out hover:text-gray-300 md:bg-white md:px-6 md:py-3 md:uppercase md:text-black md:hover:bg-black md:hover:text-white"
             onClick={handleClick}
           >
             Contact me

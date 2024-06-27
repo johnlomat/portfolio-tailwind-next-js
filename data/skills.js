@@ -1,4 +1,3 @@
-// data/skills.js
 export const usingNow = [
   {
     name: "HTML5",

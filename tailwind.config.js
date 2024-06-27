@@ -1,4 +1,5 @@
 const plugin = require("tailwindcss/plugin");
+const flowbite = require("flowbite-react/tailwind");
 
 const radialGradientPlugin = plugin(
   function ({ matchUtilities, theme }) {
@@ -50,6 +51,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite-react/lib/**/*.js",
+    flowbite.content(),
   ],
   theme: {
     container: {
@@ -64,5 +66,5 @@ module.exports = {
       },
     },
   },
-  plugins: [radialGradientPlugin, require("flowbite/plugin")],
+  plugins: [radialGradientPlugin, flowbite.plugin()],
 };

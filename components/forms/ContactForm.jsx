@@ -1,4 +1,3 @@
-// components/ContactForm.js
 "use client";
 
 import { useState } from "react";
@@ -98,20 +97,17 @@ export default function ContactForm() {
             className="font-open-sans"
           />
         </div>
-        <Button
-          type="submit"
-          className="w-full rounded border-2 border-black bg-transparent p-2 font-bold uppercase text-black hover:bg-black hover:text-white"
-        >
+        <Button type="submit" className="w-full uppercase">
           Submit
         </Button>
       </form>
       {responseMessage.message && (
-        <Toast className="fixed bottom-4 left-1/2 z-10 m-0 w-auto -translate-x-1/2 p-4 shadow-md">
+        <Toast className="fixed bottom-4 left-1/2 z-10 m-0 w-4/5 max-w-none -translate-x-1/2 p-4 md:w-auto">
           <FontAwesomeIcon
             icon={responseMessage.isSuccessful ? faCircleCheck : faCircleXmark}
             className={`text-2xl ${responseMessage.isSuccessful ? "text-green-400" : "text-red-600"}`}
           />
-          <div className="ml-3 text-sm font-normal">
+          <div className="mx-3 font-open-sans text-sm">
             {responseMessage.message}
           </div>
           <ToastToggle className="flex items-center justify-center" />

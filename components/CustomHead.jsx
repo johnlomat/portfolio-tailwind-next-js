@@ -1,4 +1,3 @@
-// components/CustomHead.js
 import Head from "next/head";
 import PropTypes from "prop-types";
 

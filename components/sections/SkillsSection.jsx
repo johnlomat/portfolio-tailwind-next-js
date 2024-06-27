@@ -1,4 +1,3 @@
-// components/SkillsSection.js
 import Image from "next/image";
 import { usingNow, learning, otherSkills } from "../../data/skills";
 import { HeadingTwo } from "../ui/HeadingPreset";
