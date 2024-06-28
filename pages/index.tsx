@@ -40,6 +40,7 @@ const HomePage: NextPage = () => {
                 <Link
                   href="https://linkedin.com/in/john-lomat-3b0447121/"
                   target="_blank"
+                  aria-label="See my working experience"
                 >
                   <div className="group flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-white hover:bg-black md:bg-[#C4C4C4]">
                     <FontAwesomeIcon
@@ -48,7 +49,11 @@ const HomePage: NextPage = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://github.com/johnlomat/" target="_blank">
+                <Link
+                  href="https://github.com/johnlomat/"
+                  target="_blank"
+                  aria-label="See my Github projects"
+                >
                   <div className="group flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-white hover:bg-black md:bg-[#C4C4C4]">
                     <FontAwesomeIcon
                       icon={faGithub}
@@ -56,7 +61,11 @@ const HomePage: NextPage = () => {
                     />
                   </div>
                 </Link>
-                <Link href="https://codepen.io/jedl1503" target="_blank">
+                <Link
+                  href="https://codepen.io/jedl1503"
+                  target="_blank"
+                  aria-label="See my Codepen projects"
+                >
                   <div className="group flex h-[3rem] w-[3rem] items-center justify-center rounded-full bg-white hover:bg-black md:bg-[#C4C4C4]">
                     <FontAwesomeIcon
                       icon={faCodepen}
@@ -73,6 +82,7 @@ const HomePage: NextPage = () => {
               alt="John Lomat profile picture"
               width={515}
               height={872}
+              priority={true}
             />
           </div>
         </div>

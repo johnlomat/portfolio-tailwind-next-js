@@ -69,6 +69,7 @@ const Header = () => {
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none"
+            aria-label="Toggle navigation"
           >
             <FontAwesomeIcon icon={faBars} className="h-6 w-6" />
           </button>
