@@ -25,7 +25,7 @@ const Footer = () => {
           >
             <Image
               src="/images/back-to-top-arrow.svg"
-              alt="back to top"
+              alt="arrow top"
               width={9}
               height={10}
               className="mb-2"

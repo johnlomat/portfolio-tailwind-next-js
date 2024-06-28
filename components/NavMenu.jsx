@@ -29,16 +29,17 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
       <ul className="flex-col items-center space-x-0 space-y-4 rounded-lg bg-white p-6 font-montserrat shadow-lg md:flex md:flex-row md:space-x-12 md:space-y-0 md:rounded-none md:bg-transparent md:p-0 md:shadow-none 2xl:space-x-20">
         <li>
           <Link
-            href="#about-me"
+            href={{ pathname: "/", hash: "about-me" }}
             className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
+            scroll={false}
           >
             About me
           </Link>
         </li>
         <li>
           <Link
-            href="#skills"
+            href={{ pathname: "/", hash: "skills" }}
             className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
           >
@@ -47,7 +48,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         </li>
         <li>
           <Link
-            href="#projects"
+            href={{ pathname: "/", hash: "projects" }}
             className="font-bold text-[#212121] hover:text-gray-300 md:text-white"
             onClick={handleClick}
           >
@@ -56,7 +57,7 @@ const NavMenu = ({ isMenuOpen, toggleMenu }) => {
         </li>
         <li>
           <Link
-            href="#contact-me"
+            href={{ pathname: "/", hash: "contact-me" }}
             className="rounded-full bg-none p-0 font-bold normal-case text-[#212121] transition ease-in-out hover:text-gray-300 md:bg-white md:px-6 md:py-3 md:uppercase md:text-black md:hover:bg-black md:hover:text-white"
             onClick={handleClick}
           >
