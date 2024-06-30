@@ -119,6 +119,13 @@ export const usingNow = [
     height: 47,
   },
   {
+    name: "Webpack",
+    src: "/images/webpack-logo.svg",
+    alt: "Webpack",
+    width: 100,
+    height: 113,
+  },
+  {
     name: "cPanel",
     src: "/images/cpanel-logo.svg",
     alt: "cPanel",
