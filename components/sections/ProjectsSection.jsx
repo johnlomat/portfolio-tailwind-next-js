@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Modal } from "flowbite-react";
+import { Button, Modal, Tooltip } from "flowbite-react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -49,8 +49,10 @@ const ProjectsSection = () => {
   );
 
   const TechStack = ({ logo, title }) => (
-    <div className="flex items-center justify-center">
-      <Image src={logo} alt={title} title={title} width={50} height={50} />
+    <div className="relative flex items-center justify-center">
+      <Tooltip content={title}>
+        <Image src={logo} alt={title} width={50} height={50} />
+      </Tooltip>
     </div>
   );
 
