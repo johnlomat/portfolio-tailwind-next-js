@@ -1,5 +1,50 @@
 export const projects = [
   {
+    title: "Premier Volleyball League",
+    description:
+      "Premier Volleyball League is a dynamic sports website dedicated to showcasing volleyball events, teams, and player profiles. The frontend was developed using HTML, CSS, JavaScript, Bootstrap 5, Swiper.js, Isotope.js, Infinite Scroll.js, Sass, Webpack, npm, and Leaflet.js for viewing seatmaps. The focus was on frontend development, ensuring a seamless and engaging user experience without involvement in backend functionalities.",
+    type: "Sports website",
+    scope_list_html:
+      "<li><strong>HTML, CSS, JavaScript</strong>: Utilized foundational web technologies to structure, style, and add interactive elements to the website.</li><li><strong>Bootstrap 5</strong>: Implemented Bootstrap 5 framework to ensure responsive design and streamline frontend development.</li><li><strong>Swiper.js</strong>: Integrated Swiper.js for creating touch-enabled sliders and carousels to showcase content dynamically.</li><li><strong>Isotope.js</strong>: Used Isotope.js for sorting and filtering volleyball events, teams, and player profiles with smooth animations.</li><li><strong>Infinite Scroll.js</strong>: Implemented Infinite Scroll.js to dynamically load more content as users scroll, enhancing usability and reducing page load times.</li><li><strong>Sass (Syntactically Awesome Style Sheets)</strong>: Employed Sass for efficient CSS authoring, providing variables, mixins, and nested rules for streamlined styling and maintainability.</li><li><strong>Webpack</strong>: Utilized Webpack for bundling JavaScript modules and managing dependencies, optimizing frontend performance and resource management.</li><li><strong>npm (Node Package Manager)</strong>: Managed project dependencies and scripts using npm, ensuring efficient package installation and version control.</li><li><strong>Leaflet.js</strong>: Integrated Leaflet.js for interactive seatmap viewing, allowing users to explore and select seats for volleyball events.</li><li><strong>Responsive Design</strong>: Ensured the website provides a consistent and user-friendly experience across all devices, including desktops, tablets, and smartphones.</li>",
+    image: {
+      full: "/images/project-screenshots/Premier-Volleyball-League.jpeg",
+      alt_text: "Wawasan Open University Portfolio Thumbnail",
+    },
+    screenshot_link:
+      "https://drive.google.com/drive/folders/1-Bp9W1Umo2tPS3bmN2LKonXk7xsUzPqj",
+    demo_link: "https://premier-volleyball-league-site.vercel.app/",
+    tech_stack: [
+      {
+        logo: "/images/html5-logo.svg",
+        title: "HTML",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS",
+      },
+      {
+        logo: "/images/javascript-logo.svg",
+        title: "JavaScript",
+      },
+      {
+        logo: "/images/bootstrap-logo.svg",
+        title: "Bootstrap 5",
+      },
+      {
+        logo: "/images/sass-logo.svg",
+        title: "Sass",
+      },
+      {
+        logo: "/images/npm-logo.svg",
+        title: "Node Package Manager",
+      },
+      {
+        logo: "/images/webpack-logo.svg",
+        title: "Webpack",
+      },
+    ],
+  },
+  {
     title: "Wawasan Open University",
     description:
       "Wawasan Open University (WOU) approached us with the goal of revamping their existing website to enhance user experience, streamline content management, and improve overall performance. As a premier institution of higher learning in Malaysia, WOU required a modern, user-friendly website that reflects its academic excellence and commitment to accessible education.",
@@ -11,7 +56,7 @@ export const projects = [
       alt_text: "Wawasan Open University Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1D2fjPgL4BgG08X1yE1rpXHAgdPhBvEWA",
+      "https://drive.google.com/drive/folders/1D2fjPgL4BgG08X1yE1rpXHAgdPhBvEWA",
     demo_link: "https://www.wou.edu.my/",
     tech_stack: [
       {
@@ -84,7 +129,7 @@ export const projects = [
       alt_text: "Menicon Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1ZcDZ0Qn_abMQ-gKdDBPrwEdvUWsXosvq",
+      "https://drive.google.com/drive/folders/1ZcDZ0Qn_abMQ-gKdDBPrwEdvUWsXosvq",
     demo_link: "https://www.menicon.my/",
     tech_stack: [
       {
@@ -112,7 +157,7 @@ export const projects = [
   {
     title: "GS9 Club Indonesia",
     description:
-      "Grand Seiko has launched the Indonesia Chapter of GS9 Club! Originally exclusive to Japan, the GS9 Club is a membership organization for Grand Seiko owners who have purchased from a Indonesia-based Boutique, Salon, or Mastershop as of March 24th 2017. Special events, gifts, and articles will be accessible to qualified members.",
+      "The website was developed using WordPress and Divi, combining powerful content management with flexible and visually appealing design capabilities.",
     type: "Blog website",
     scope_list_html:
       "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Grand Seiko Indonesia's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Dynamic Blog Posts</strong>: Utilizing WordPress's built-in post types, I created dynamic blog posts that allow Grand Seiko Indonesia's team to effortlessly publish and manage content directly from the WordPress dashboard. This ensures flexibility and ease of content management without the need for additional plugins.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, optimizing overall performance and enhancing user engagement.</li>",
@@ -121,7 +166,7 @@ export const projects = [
       alt_text: "GS9 Club Indonesia Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1JvoZlz1YHOwoBICJUfDkNTAuZXJ1OYec",
+      "https://drive.google.com/drive/folders/1JvoZlz1YHOwoBICJUfDkNTAuZXJ1OYec",
     demo_link: "https://www.grandseikogs9club.id/",
     tech_stack: [
       {
@@ -149,16 +194,16 @@ export const projects = [
   {
     title: "Grand Seiko Online Store",
     description:
-      "The brand celebrates the Japanese spirituality of time that is deeply inspired by nature and her seasons and brought to life by Takumi, the dedicated seekers of mastery.",
+      "The project utilized a combination of WordPress, WooCommerce, Divi Page Builder, and Advanced Custom Fields (ACF) to create a highly functional and visually appealing eCommerce website.",
     type: "eCommerce website",
     scope_list_html:
-      "<li>Setup WooCommerce platform.</li><li>Setup payment gateway.</li><li>Develop mockup design pages in Divi page builder.</li><li>Form integration with ninja form.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
+      "<li><strong>Setup WooCommerce Platform</strong>: Implemented the WooCommerce platform to provide a robust and scalable eCommerce solution for seamless online shopping experiences.</li><li><strong>Setup Payment Gateway</strong>: Integrated secure and reliable payment gateways to facilitate smooth and safe transactions for customers.</li><li><strong>Develop Mockup Design Pages in Divi Page Builder</strong>: Utilized the Divi page builder to create visually appealing and customizable mockup design pages that align with the brand's aesthetics.</li><li><strong>Form Integration with Ninja Forms</strong>: Seamlessly integrated Ninja Forms to facilitate user interaction and lead generation, allowing visitors to submit inquiries and feedback directly through intuitive and customizable forms.</li><li><strong>Advanced Custom Fields Integration</strong>: Integrated Advanced Custom Fields to empower content managers with the ability to add custom meta-data fields to various content types, enabling granular control over content presentation.</li><li><strong>Optimize Page Speed</strong>: Implemented optimization techniques such as image compression, lazy loading, and caching to enhance website speed and performance.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/Grand-Seiko-Online-Store.jpg",
       alt_text: "Grand Seiko Online Store Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1KaKLNy6wLulkLImDLgdrXNfp5b0TA_3w",
+      "https://drive.google.com/drive/folders/1KaKLNy6wLulkLImDLgdrXNfp5b0TA_3w",
     demo_link: "https://grandseikoboutiqueapac.com/",
     tech_stack: [
       {
@@ -190,16 +235,16 @@ export const projects = [
   {
     title: "Retrospective Media",
     description:
-      "When it comes to design, you'll notice we stick to a minimal style (less is more, right?), but we're always up for a challenge. Our specialties include ad design, email design, decks, landing pages, social media graphics, and web assets, but if you need something that's not on that list, just ask! We've had the pleasure of working with some pretty cool companies, from SAAS startups to e-commerce stores, and even a few Fortune 500s. So, whether you're looking for a designer to refresh your website or to make your marketing materials stand out, we're here to help.",
+      "The website was developed using WordPress and Elementor, combining powerful content management with flexible and visually appealing design capabilities.",
     type: "Business website",
     scope_list_html:
-      "<li>Develop mockup design pages in Elementor page builder.</li><li>Mobile optimization</li><li>Responsive design.</li>",
+      "<li><strong>Develop Mockup Design Pages in Elementor Page Builder</strong>: Utilized the Elementor page builder to create visually appealing and customizable mockup design pages that align with the brand's aesthetics.</li><li><strong>Mobile Optimization</strong>: Ensured the website is fully optimized for mobile devices, providing an excellent user experience on smartphones and tablets.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/Retrospective-Media.jpg",
       alt_text: "Retrospective Media Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1aC3Vysez-QcyELZBJVhlvrni-vTvpjmj",
+      "https://drive.google.com/drive/folders/1aC3Vysez-QcyELZBJVhlvrni-vTvpjmj",
     demo_link: "https://retrospectivemedia.com/",
     tech_stack: [
       {
@@ -227,16 +272,16 @@ export const projects = [
   {
     title: "Apple Crider",
     description:
-      "Apple Crider is an entrepreneur, talent manager, and online creator. He is best known for his YouTube content that provides small businesses and entrepreneurs with tools to grow and scale.",
+      "Apple Crider is an entrepreneur, talent manager, and online creator. He is best known for his YouTube content that provides small businesses and entrepreneurs with tools to grow and scale. The website was developed using WordPress and Elementor, combining powerful content management with flexible and visually appealing design capabilities.",
     type: "Personal website",
     scope_list_html:
-      "<li>Develop mockup design pages in Elementor page builder.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
+      "<li><strong>Develop Mockup Design Pages in Elementor Page Builder</strong>: Utilized the Elementor page builder to create visually appealing and customizable mockup design pages that align with Apple Crider's brand and content.</li><li><strong>Optimize Page Speed</strong>: Implemented optimization techniques such as image compression, lazy loading, and caching to enhance website speed and performance.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/Apple-Crider.jpg",
       alt_text: "Apple Crider Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=13LZOHzYJP8rOOiHq7DBEob5t8F6sO23I",
+      "https://drive.google.com/drive/folders/13LZOHzYJP8rOOiHq7DBEob5t8F6sO23I",
     demo_link: "https://applecrider.com/",
     tech_stack: [
       {
@@ -264,16 +309,16 @@ export const projects = [
   {
     title: "The Spa Shop",
     description:
-      "At The Spa Shop, we are committed to provide quality spa products, equipment and accessories for your customers to indulge in. Whether you are an individual, company or organisation looking for body scrubs, beauty devices, or even towels, we have it all under one roof.",
+      "At The Spa Shop, we are committed to providing quality spa products, equipment, and accessories for your customers to indulge in. Whether you are an individual, company, or organization looking for body scrubs, beauty devices, or even towels, we have it all under one roof. The website was developed using WordPress, WooCommerce, and Divi, combining powerful content management with flexible and visually appealing design capabilities.",
     type: "eCommerce website",
     scope_list_html:
-      "<li>Setup WooCommerce platform.</li><li>Setup payment gateway.</li><li>Develop mockup design pages in Divi page builder.</li><li>Form integration with ninja form.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
+      "<li><strong>Setup WooCommerce Platform</strong>: Implemented the WooCommerce platform to provide a robust and scalable eCommerce solution for seamless online shopping experiences.</li><li><strong>Setup Payment Gateway</strong>: Integrated secure and reliable payment gateways to facilitate smooth and safe transactions for customers.</li><li><strong>Develop Mockup Design Pages in Divi Page Builder</strong>: Utilized the Divi page builder to create visually appealing and customizable mockup design pages that align with the brand's aesthetics.</li><li><strong>Form Integration with Ninja Forms</strong>: Seamlessly integrated Ninja Forms to facilitate user interaction and lead generation, allowing visitors to submit inquiries and feedback directly through intuitive and customizable forms.</li><li><strong>Optimize Page Speed</strong>: Implemented optimization techniques such as image compression, lazy loading, and caching to enhance website speed and performance.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/The-Spa-Shop.jpg",
       alt_text: "The Spa Shop Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1bmkBfmflCZ7-9DCQZ976LL_qnn_bzHTt",
+      "https://drive.google.com/drive/folders/1bmkBfmflCZ7-9DCQZ976LL_qnn_bzHTt",
     demo_link: "https://spashopasia.com/",
     tech_stack: [
       {
@@ -305,10 +350,10 @@ export const projects = [
   {
     title: "Crypto Conference LA",
     description:
-      "Crypto Conference LA encompasses everything from Crypto, NFT's, Web3, the Metaverse and more! Connect with a multitude of investors that will elevate what you already know about the ever growing crypto ecosystem.",
+      "Crypto Conference LA encompasses everything from Crypto, NFTs, Web3, the Metaverse, and more! Connect with a multitude of investors that will elevate what you already know about the ever-growing crypto ecosystem. The website was developed using WordPress and Visual Composer, providing a robust platform for creating dynamic and visually appealing pages.",
     type: "Business website",
     scope_list_html:
-      "<li>Develop mockup design pages in Visual Composer page builder.</li><li>Form integration with SendGrid.</li><li>Responsive design.</li>",
+      "<li><strong>Develop Mockup Design Pages in Visual Composer Page Builder</strong>: Utilized the Visual Composer page builder to create visually appealing and customizable mockup design pages that align with the conference's themes and content.</li><li><strong>Form Integration with SendGrid</strong>: Seamlessly integrated SendGrid to manage and automate email communications, including form submissions and attendee interactions.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/Crypto-Conference-LA.jpg",
       alt_text: "Crypto Conference LA Portfolio Thumbnail",
@@ -355,7 +400,7 @@ export const projects = [
       alt_text: "Creators Agency Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=154DNGB4w3CUFVLRYkG0ASJcRmasWxaUl",
+      "https://drive.google.com/drive/folders/154DNGB4w3CUFVLRYkG0ASJcRmasWxaUl",
     demo_link: "https://creatorsagency.co/",
     tech_stack: [
       {
@@ -392,7 +437,7 @@ export const projects = [
       alt_text: "GoFresh Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1EYCCvA39Gj9RlPmIha-krBifOrAXFxMA",
+      "https://drive.google.com/drive/folders/1EYCCvA39Gj9RlPmIha-krBifOrAXFxMA",
     demo_link: "",
     tech_stack: [
       {
@@ -433,7 +478,7 @@ export const projects = [
       alt_text: "Hung Cheong Jewellery & Watch Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1Oko1yQWGxd07IGQFDgYUrGpUJw-fe7G6",
+      "https://drive.google.com/drive/folders/1Oko1yQWGxd07IGQFDgYUrGpUJw-fe7G6",
     demo_link: "https://hungcheong.com.my/",
     tech_stack: [
       {
@@ -465,16 +510,16 @@ export const projects = [
   {
     title: "Kirk Paige Collections",
     description:
-      "Shop stylish tees, hats, and hoodies today. An inspirational and motivational clothing line that bring happiness through fashion apparel. Shop limited edition tees, hats, hoodies and more today. All products are unisex.",
+      "Kirk Paige Collections offers a stylish selection of tees, hats, hoodies, and more—an inspirational and motivational clothing line that brings happiness through fashion apparel. The website was developed using WordPress, WooCommerce, Elementor, and integrated with custom WooCommerce hooks to enhance functionality and user experience.",
     type: "eCommerce website",
     scope_list_html:
-      "<li>Setup Storefront theme and WooCommerce platform.</li><li>Develop mockup design pages in Elementor page builder.</li><li>Customized WooCommerce pages with custom CSS.</li><li>Custom hooks for WooCommerce.</li><li>Setup payment gateway.</li><li>Optimize page speed.</li><li>Responsive design.</li>",
+      "<li><strong>Setup Storefront theme and WooCommerce platform</strong>: Established a robust eCommerce foundation using the Storefront theme and WooCommerce platform.</li><li><strong>Develop mockup design pages in Elementor page builder</strong>: Utilized Elementor page builder to create visually appealing and customizable mockup design pages that resonate with the brand's style and messaging.</li><li><strong>Customized WooCommerce pages with custom CSS</strong>: Implemented custom CSS to tailor WooCommerce pages to specific design and functionality requirements.</li><li><strong>Custom hooks for WooCommerce</strong>: Integrated custom hooks to enhance the functionality and user experience of WooCommerce features.</li><li><strong>Setup payment gateway</strong>: Configured a secure and efficient payment gateway to facilitate seamless transactions for customers.</li><li><strong>Optimize page speed</strong>: Implemented optimization strategies such as image compression, lazy loading, and caching to enhance website performance and loading times.</li><li><strong>Responsive design</strong>: Ensured the website provides a consistent and user-friendly experience across all devices, including desktops, tablets, and smartphones.</li>",
     image: {
       full: "/images/project-screenshots/Kirk-Paige-Collections.jpg",
       alt_text: "Kirk Paige Collections Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1-hcn2RsbMvUAwkrq4ZWiOHPlx7JP1vLs",
+      "https://drive.google.com/drive/folders/1-hcn2RsbMvUAwkrq4ZWiOHPlx7JP1vLs",
     demo_link: "",
     tech_stack: [
       {
@@ -515,7 +560,7 @@ export const projects = [
       alt_text: "Pumpcan Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1ra4ZEfZbxwY9fXyZgcny875BpzBXp3tj",
+      "https://drive.google.com/drive/folders/1ra4ZEfZbxwY9fXyZgcny875BpzBXp3tj",
     demo_link: "",
     tech_stack: [
       {
@@ -545,6 +590,47 @@ export const projects = [
     ],
   },
   {
+    title: "Elizabeth Image Branding",
+    description:
+      "Elizabeth Image Branding approached us to develop a new website that effectively showcases their personal image branding and image management programs and consultancy services. As a leading expert in the field, Elizabeth Image Branding required a modern, visually appealing, and highly functional website to highlight their expertise and offerings. The new site needed to offer a seamless user experience, easy content management, and strong performance across all devices.",
+    type: "Personal website",
+    scope_list_html:
+      "<li><strong>Divi Page Builder Integration</strong>: Leveraged the powerful Divi page builder to create visually stunning and customizable pages effortlessly, empowering content managers to design and edit content with ease.</li><li><strong>Ninja Forms Integration</strong>: Seamlessly integrated Ninja Forms to facilitate user interaction and lead generation, allowing visitors to submit inquiries and feedback directly through intuitive and customizable forms.</li><li><strong>Responsive Design</strong>: Ensured the website is fully responsive across all devices, providing an optimal viewing experience for users on desktops, tablets, and smartphones.</li><li><strong>Improved Performance</strong>: Implemented optimization techniques such as image compression, lazy loading, and caching to enhance website speed and performance.</li><li><strong>Enhanced User Experience</strong>: Redesigned the website’s navigation structure and user interface to improve accessibility and streamline user journeys.</li>",
+    image: {
+      full: "/images/project-screenshots/Elizabeth-Image-Branding.png",
+      alt_text: "Elizabeth Image Branding Portfolio Thumbnail",
+    },
+    screenshot_link:
+      "https://drive.google.com/drive/folders/1mDeSZJgpcVsZcSUgeCYce2Nh8wuyQqlS",
+    demo_link: "",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS3",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
+  },
+  {
     title: "Astro NJOI",
     description:
       "Over 100 channels including award-winning movies, endless local and international dramas and an unbeatable line-up of world-class sports on demand. Top this with a high-speed broadband service you can rely on.",
@@ -556,7 +642,7 @@ export const projects = [
       alt_text: "Astro NJOI Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1XaFlItz1eekY47nlKLdqIBXy2HNedZSx",
+      "https://drive.google.com/drive/folders/1XaFlItz1eekY47nlKLdqIBXy2HNedZSx",
     demo_link: "",
     tech_stack: [
       {
@@ -597,7 +683,7 @@ export const projects = [
       alt_text: "Watatime Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1UzCAyzNVtOtrZSQXnKbRcP1BNOWdwGlP",
+      "https://drive.google.com/drive/folders/1UzCAyzNVtOtrZSQXnKbRcP1BNOWdwGlP",
     demo_link: "https://watatime.com/",
     tech_stack: [
       {
@@ -638,7 +724,7 @@ export const projects = [
       alt_text: "Astro Broadband Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1OzXuu5XipXn39lI9YVImgkPuhfi4DS_k",
+      "https://drive.google.com/drive/folders/1OzXuu5XipXn39lI9YVImgkPuhfi4DS_k",
     demo_link: "",
     tech_stack: [
       {
@@ -679,7 +765,7 @@ export const projects = [
       alt_text: "MASCO Co-working Space Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1Zx8-I1lHar76DFqIUN8rJDtcFoZIwVn7",
+      "https://drive.google.com/drive/folders/1Zx8-I1lHar76DFqIUN8rJDtcFoZIwVn7",
     demo_link: "https://masco.my/",
     tech_stack: [
       {
@@ -720,7 +806,7 @@ export const projects = [
       alt_text: "Woo Hing Brothers Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1_r5PZjKB_ZCMf7thN1nYNy4vyHSpTxca",
+      "https://drive.google.com/drive/folders/1_r5PZjKB_ZCMf7thN1nYNy4vyHSpTxca",
     demo_link: "https://woohingwatches.com/",
     tech_stack: [
       {
@@ -761,7 +847,7 @@ export const projects = [
       alt_text: "Active Swim Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1mwNSUC1lQQyxDL5CgtK3Do6MzCIYuS1d",
+      "https://drive.google.com/drive/folders/1mwNSUC1lQQyxDL5CgtK3Do6MzCIYuS1d",
     demo_link: "https://www.swimmingschool.com.my/",
     tech_stack: [
       {
@@ -802,7 +888,7 @@ export const projects = [
       alt_text: "Vincent Watch Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1EEm434QPWfSxSUet2-qtE1voZBEn_2aW",
+      "https://drive.google.com/drive/folders/1EEm434QPWfSxSUet2-qtE1voZBEn_2aW",
     demo_link: "https://tudor.vincentwatch.com.sg/",
     tech_stack: [
       {
@@ -843,7 +929,7 @@ export const projects = [
       alt_text: "Talent Trust Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1qKepYxivBCTv-Pq56TarZnU5kgn6Ge-R",
+      "https://drive.google.com/drive/folders/1qKepYxivBCTv-Pq56TarZnU5kgn6Ge-R",
     demo_link: "https://www.talent-trust.com/",
     tech_stack: [
       {
@@ -884,7 +970,7 @@ export const projects = [
       alt_text: "Creative Campus Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1inIeGD4ky0JQj_RGk1v581Nf0yuO3Y9G",
+      "https://drive.google.com/drive/folders/1inIeGD4ky0JQj_RGk1v581Nf0yuO3Y9G",
     demo_link: "https://www.creativecampus.com.my/",
     tech_stack: [
       {
@@ -925,7 +1011,7 @@ export const projects = [
       alt_text: "Pamilya Store Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=13iWN3sZxYbE3-OlRxLJfOWtTZyfVnXiu",
+      "https://drive.google.com/drive/folders/13iWN3sZxYbE3-OlRxLJfOWtTZyfVnXiu",
     demo_link: "",
     tech_stack: [
       {
@@ -965,7 +1051,7 @@ export const projects = [
       alt_text: "LAPEI - Travel & Tour Services Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=1U2QpAL9NekAPBnMu9utiGOeMiqPokInH",
+      "https://drive.google.com/drive/folders/1U2QpAL9NekAPBnMu9utiGOeMiqPokInH",
     demo_link: "",
     tech_stack: [
       {
@@ -1002,7 +1088,7 @@ export const projects = [
       alt_text: "Artesyn Embedded Power Portfolio Thumbnail",
     },
     screenshot_link:
-      "https://drive.google.com/folderview?id=14sCGv1MsJv5SiYlgWWvB8l0OzNrKtBKV",
+      "https://drive.google.com/drive/folders/14sCGv1MsJv5SiYlgWWvB8l0OzNrKtBKV",
     demo_link: "",
     tech_stack: [
       {
