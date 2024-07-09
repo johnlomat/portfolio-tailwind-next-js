@@ -11,7 +11,7 @@ const CustomHead = ({ title, description, keywords }) => {
       {keywords && <meta name="keywords" content={keywords} />}
       <meta
         name="google-site-verification"
-        content="7NN8-jgUHSF67XXTI5GgkXHIWI-c2OrIXFh4l1eDzpo"
+        content="O9Fqju7f6cW3gK_PGBAX3w5xL0rvMKqtuwFLeQoPIxY"
       />
 
       {/* Facebook meta tags */}
