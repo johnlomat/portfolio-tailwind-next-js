@@ -1,11 +1,9 @@
 import Head from "next/head";
 import PropTypes from "prop-types";
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 const CustomHead = ({ title, description, keywords }) => {
   return (
     <Head>
-      <GoogleAnalytics gaId="G-5G05S9L675" />
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}

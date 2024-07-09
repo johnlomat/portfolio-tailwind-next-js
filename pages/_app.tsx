@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import { Raleway, Open_Sans, Montserrat } from "next/font/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "../styles/globals.css";
@@ -36,6 +37,8 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
 
       <Footer />
+
+      <GoogleAnalytics gaId="G-5G05S9L675" />
     </div>
   );
 }
