@@ -43,7 +43,7 @@ const ProjectsSection = () => {
         width={840}
         height={495}
         alt={project.image.alt_text}
-        className="grayscale group-hover:grayscale-0"
+        className="text-white grayscale group-hover:grayscale-0"
       />
     </div>
   );

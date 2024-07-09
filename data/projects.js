@@ -1,5 +1,99 @@
 export const projects = [
   {
+    title: "WordPress Headless CMS & Next JS",
+    description:
+      "This project demonstrates how to use WordPress as a headless CMS with Next.js. It leverages Advanced Custom Fields (ACF) to manage custom data in WordPress and fetches this data via the WPGraphQL plugin to render content on the Next.js frontend.",
+    type: "Experimental website",
+    scope_list_html:
+      "<li><strong>WordPress as a Headless CMS</strong>: WordPress is used solely for content management, with the frontend entirely decoupled.</li><li><strong>Advanced Custom Fields (ACF)</strong>: Utilize ACF to define and manage custom data fields within WordPress.</li><li><strong>Next.js for Server-side Rendering (SSR) and Static Site Generation (SSG)</strong>: Next.js provides flexibility in rendering strategies to optimize performance.</li><li><strong>Data Fetching from WPGraphQL</strong>: Fetch content and custom data from WordPress via its GraphQL endpoints.</li><li><strong>Responsive and Modern UI</strong>: Design and implement a responsive user interface leveraging Next.js and Tailwind CSS.</li><li><strong>Metadata Management with Next.js</strong>: Use Next.js Metadata API to manage SEO and social media metadata for improved search engine visibility and social sharing.</li>",
+    image: {
+      full: "/images/project-screenshots/wordpress-headless-cms-next-js.jpeg",
+      alt_text: "WordPress Headless CMS & Next JS Portfolio Thumbnail",
+    },
+    screenshot_link:
+      "https://drive.google.com/drive/folders/1dnAVCEWrDpAJW9Hck5h9Ay7pcs8Khm8B",
+    demo_link:
+      "https://wordpress-headless-cms-next-js.vercel.app/rolex-watches",
+    tech_stack: [
+      {
+        logo: "/images/html5-logo.svg",
+        title: "HTML",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS",
+      },
+      {
+        logo: "/images/typescript-logo.svg",
+        title: "TypeScript",
+      },
+      {
+        logo: "/images/tailwindcss-logo.svg",
+        title: "Tailwind CSS",
+      },
+      {
+        logo: "/images/nextjs-logo.svg",
+        title: "Next JS",
+      },
+      {
+        logo: "/images/npm-logo.svg",
+        title: "Node Package Manager",
+      },
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/GraphQL-Logo.svg",
+        title: "GraphQL",
+      },
+    ],
+  },
+  {
+    title: "Weather React Web App",
+    description:
+      "The Weather React Web App is a streamlined React-based solution with Bootstrap integration, ensuring responsive design across devices. Seamlessly incorporating OpenWeather API, it delivers real-time weather updates with a user-friendly interface.",
+    type: "Experimental website",
+    scope_list_html:
+      "<li><strong>React for Component-based Architecture</strong>: Build a dynamic and modular user interface using React's component-based architecture.</li><li><strong>OpenWeatherMap API Integration</strong>: Fetch real-time weather data from the OpenWeatherMap API, including current conditions, forecasts, and weather alerts.</li><li><strong>Geolocation API</strong>: Use the Geolocation API to get the user's current location and display localized weather information.</li><li><strong>Responsive Design with Bootstrap 5 and Sass</strong>: Implement a fully responsive and modern user interface leveraging Bootstrap 5 with Sass for customizable styling.</li><li><strong>Weather Icons and Graphics</strong>: Integrate weather-specific icons and graphics to visually represent different weather conditions using libraries like Weather Icons or custom SVGs.</li>",
+    image: {
+      full: "/images/project-screenshots/weather-react-web-app.jpeg",
+      alt_text: "Weather React Web App Portfolio Thumbnail",
+    },
+    screenshot_link: "",
+    demo_link: "https://weather-react-web-app.vercel.app/",
+    tech_stack: [
+      {
+        logo: "/images/html5-logo.svg",
+        title: "HTML",
+      },
+      {
+        logo: "/images/css3-logo.svg",
+        title: "CSS",
+      },
+      {
+        logo: "/images/javascript-logo.svg",
+        title: "JavaScript",
+      },
+      {
+        logo: "/images/bootstrap-logo.svg",
+        title: "Bootstrap 5",
+      },
+      {
+        logo: "/images/sass-logo.svg",
+        title: "Sass",
+      },
+      {
+        logo: "/images/reactjs-logo.svg",
+        title: "React JS",
+      },
+      {
+        logo: "/images/npm-logo.svg",
+        title: "Node Package Manager",
+      },
+    ],
+  },
+  {
     title: "Premier Volleyball League",
     description:
       "Premier Volleyball League is a dynamic sports website dedicated to showcasing volleyball events, teams, and player profiles. The frontend was developed using HTML, CSS, JavaScript, Bootstrap 5, Swiper.js, Isotope.js, Infinite Scroll.js, Sass, Webpack, npm, and Leaflet.js for viewing seatmaps. The focus was on frontend development, ensuring a seamless and engaging user experience without involvement in backend functionalities.",

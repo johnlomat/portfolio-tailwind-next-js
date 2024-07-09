@@ -150,6 +150,20 @@ export const usingNow = [
 
 export const learning = [
   {
+    name: "TypeScript",
+    src: "/images/typescript-logo.svg",
+    alt: "TypeScript",
+    width: 106,
+    height: 100,
+  },
+  {
+    name: "GraphQL",
+    src: "/images/GraphQL-Logo.svg",
+    alt: "GraphQL",
+    width: 106,
+    height: 100,
+  },
+  {
     name: "React",
     src: "/images/reactjs-logo.svg",
     alt: "React",
