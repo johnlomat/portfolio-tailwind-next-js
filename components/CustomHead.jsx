@@ -15,14 +15,8 @@ const CustomHead = ({ title, description, keywords }) => {
       {/* Facebook meta tags */}
       <meta property="og:url" content="https://johnlomat.vercel.app/" />
       <meta property="og:type" content="website" />
-      <meta
-        property="og:title"
-        content="John Lomat | WordPress & WooCommerce Expert"
-      />
-      <meta
-        property="og:description"
-        content="Expert WordPress developer specializing in custom websites, WooCommerce, Elementor, Divi, ACF, and SEO optimization. Proven track record with 26 websites delivered."
-      />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta
         property="og:image"
         content="https://drive.google.com/uc?id=1iyJSLVN5ti5oQofPWKsbWMRfWrJOpXSO"
@@ -31,21 +25,15 @@ const CustomHead = ({ title, description, keywords }) => {
       {/* Twitter meta tags */}
       <meta property="twitter:url" content="https://johnlomat.vercel.app/" />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta
-        name="twitter:title"
-        content="John Lomat | WordPress & WooCommerce Expert"
-      />
-      <meta
-        name="twitter:description"
-        content="Expert WordPress developer specializing in custom websites, WooCommerce, Elementor, Divi, ACF, and SEO optimization. Proven track record with 26 websites delivered."
-      />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={description} />
       <meta
         name="twitter:image"
         content="https://drive.google.com/uc?id=1iyJSLVN5ti5oQofPWKsbWMRfWrJOpXSO"
       />
 
       {/* Favicon */}
-      <link
+      <linknpm
         rel="apple-touch-icon"
         sizes="180x180"
         href="/images/apple-touch-icon.png"
