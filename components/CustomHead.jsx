@@ -33,7 +33,7 @@ const CustomHead = ({ title, description, keywords }) => {
       />
 
       {/* Favicon */}
-      <linknpm
+      <link
         rel="apple-touch-icon"
         sizes="180x180"
         href="/images/apple-touch-icon.png"
