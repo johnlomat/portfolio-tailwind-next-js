@@ -1,12 +1,13 @@
 "use client";
 
-import { Button, Modal, Tooltip } from "flowbite-react";
+import { Button, Modal, Tooltip, Flowbite } from "flowbite-react";
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Open_Sans, Montserrat } from "next/font/google";
 import { HeadingTwo } from "../ui/HeadingPreset";
 import { projects } from "../../data/projects";
+import TooltipTheme from "../themes/flowbite-react/TooltipTheme";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -50,9 +51,11 @@ const ProjectsSection = () => {
 
   const TechStack = ({ logo, title }) => (
     <div className="relative flex items-center justify-center">
-      <Tooltip content={title}>
-        <Image src={logo} alt={title} width={50} height={50} />
-      </Tooltip>
+      <Flowbite theme={{ theme: TooltipTheme }}>
+        <Tooltip content={title}>
+          <Image src={logo} alt={title} width={50} height={50} />
+        </Tooltip>
+      </Flowbite>
     </div>
   );
 
