@@ -8,7 +8,7 @@ const CustomHead = ({
 }: {
   title: string;
   description: string;
-  keywords: string;
+  keywords?: string;
 }) => {
   return (
     <Head>
