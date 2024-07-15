@@ -3,7 +3,13 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-const NavMenu = ({ isMenuOpen, toggleMenu }) => {
+const NavMenu = ({
+  isMenuOpen,
+  toggleMenu,
+}: {
+  isMenuOpen: boolean;
+  toggleMenu: any;
+}) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {

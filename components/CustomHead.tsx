@@ -1,7 +1,15 @@
 import Head from "next/head";
 import PropTypes from "prop-types";
 
-const CustomHead = ({ title, description, keywords }) => {
+const CustomHead = ({
+  title,
+  description,
+  keywords,
+}: {
+  title: string;
+  description: string;
+  keywords: string;
+}) => {
   return (
     <Head>
       <title>{title}</title>

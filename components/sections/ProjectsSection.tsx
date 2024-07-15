@@ -19,10 +19,21 @@ const open_sans = Open_Sans({
   display: "swap",
 });
 
-const ProjectsSection = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+interface Project {
+  title: string;
+  description: string;
+  scope_list_html: string;
+  demo_link: string;
+  screenshot_link: string;
+  type: string;
+  tech_stack: { logo: string; title: string }[];
+  image?: { full: string; alt_text: string };
+}
 
-  const handleOpenModal = (project) => {
+const ProjectsSection = () => {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  const handleOpenModal = (project: Project) => {
     setSelectedProject(project);
   };
 
@@ -30,7 +41,7 @@ const ProjectsSection = () => {
     setSelectedProject(null);
   };
 
-  const ProjectCard = ({ project }) => (
+  const ProjectCard = ({ project }: { project: Project }) => (
     <div className="group relative flex w-full md:w-1/2 lg:w-1/3">
       <div className="absolute bottom-0 left-0 right-0 top-0 z-10 h-full w-full bg-black/20 transition-all ease-in-out group-hover:bg-white/10"></div>
       <Button
@@ -39,17 +50,23 @@ const ProjectsSection = () => {
       >
         Details
       </Button>
-      <Image
-        src={project.image.full}
-        width={840}
-        height={495}
-        alt={project.image.alt_text}
-        className="text-white grayscale group-hover:grayscale-0"
-      />
+      {project.image ? (
+        <Image
+          src={project.image.full}
+          width={840}
+          height={495}
+          alt={project.image.alt_text}
+          className="text-white grayscale group-hover:grayscale-0"
+        />
+      ) : (
+        <div className="flex h-48 w-full items-center justify-center bg-gray-200 text-gray-500">
+          No Image Available
+        </div>
+      )}
     </div>
   );
 
-  const TechStack = ({ logo, title }) => (
+  const TechStack = ({ logo, title }: { logo: string; title: string }) => (
     <div className="relative flex items-center justify-center">
       <Flowbite theme={{ theme: TooltipTheme }}>
         <Tooltip content={title}>
@@ -67,7 +84,7 @@ const ProjectsSection = () => {
     screenshot_link,
     type,
     tech_stack,
-  }) => (
+  }: Project) => (
     <Modal show={!!selectedProject} onClose={handleCloseModal}>
       <Modal.Header className={open_sans.className}>{title}</Modal.Header>
       <Modal.Body className={open_sans.className}>
@@ -100,8 +117,8 @@ const ProjectsSection = () => {
               Tech Stack
             </div>
             <div className="grid grid-cols-4 flex-wrap gap-6 md:grid-cols-8">
-              {tech_stack.map((techStack, index) => (
-                <TechStack key={index} {...techStack} />
+              {tech_stack.map((tech, index) => (
+                <TechStack key={index} {...tech} />
               ))}
             </div>
           </div>
@@ -124,7 +141,11 @@ const ProjectsSection = () => {
           href={screenshot_link}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${montserrat.className} ${demo_link ? "border border-gray-200 bg-white uppercase text-gray-900 hover:border-gray-300 hover:bg-gray-200" : "border border-black bg-cyan-700 font-montserrat font-bold uppercase text-white transition ease-in-out hover:bg-cyan-900"}`}
+          className={`${montserrat.className} ${
+            demo_link
+              ? "border border-gray-200 bg-white uppercase text-gray-900 hover:border-gray-300 hover:bg-gray-200"
+              : "border border-black bg-cyan-700 font-montserrat font-bold uppercase text-white transition ease-in-out hover:bg-cyan-900"
+          }`}
         >
           Screenshot
         </Button>
