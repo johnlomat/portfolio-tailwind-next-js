@@ -15,10 +15,10 @@ import {
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import useContactForm from "../../hooks/useContactForm";
-import sendEmail from "../../lib/sendEmail";
+import sendEmail from "../../services/sendEmail";
 
 export default function ContactForm() {
-  const { values, handleChange } = useContactForm();
+  const { values, handleChange, resetForm } = useContactForm();
   const [responseMessage, setResponseMessage] = useState({
     isSuccessful: false,
     message: "",
@@ -28,15 +28,17 @@ export default function ContactForm() {
     e.preventDefault();
     try {
       const req = await sendEmail(values.name, values.email, values.message);
-      if (req.status === 200) {
+      if (req.status === 250) {
         setResponseMessage({
           isSuccessful: true,
           message: "Thank you for your message.",
         });
+
+        resetForm();
       } else {
         setResponseMessage({
           isSuccessful: false,
-          message: "Oops something went wrong. Please try again.",
+          message: "Oops something went wrong sending this message.",
         });
       }
     } catch (e) {

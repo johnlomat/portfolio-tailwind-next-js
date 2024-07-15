@@ -3,11 +3,11 @@ import axios from "axios";
 const sendEmail = async (name, email, message) => {
   return axios({
     method: "POST",
-    url: "https://usebasin.com/f/d8282983945a.json",
+    url: "/api/send-email",
     data: {
-      name: name,
-      email: email,
-      message: message,
+      name,
+      email,
+      message,
     },
   });
 };
