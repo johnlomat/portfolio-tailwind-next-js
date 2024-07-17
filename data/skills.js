@@ -21,6 +21,13 @@ export const usingNow = [
     height: 100,
   },
   {
+    name: "TypeScript",
+    src: "/images/typescript-logo.svg",
+    alt: "TypeScript",
+    width: 106,
+    height: 100,
+  },
+  {
     name: "PHP",
     src: "/images/php-logo.svg",
     alt: "PHP",
@@ -98,6 +105,20 @@ export const usingNow = [
     height: 100,
   },
   {
+    name: "React",
+    src: "/images/reactjs-logo.svg",
+    alt: "React",
+    width: 106,
+    height: 100,
+  },
+  {
+    name: "GraphQL",
+    src: "/images/GraphQL-Logo.svg",
+    alt: "GraphQL",
+    width: 106,
+    height: 100,
+  },
+  {
     name: "Visual Studio Code",
     src: "/images/vscode-logo.svg",
     alt: "Visual Studio Code",
@@ -149,27 +170,6 @@ export const usingNow = [
 ];
 
 export const learning = [
-  {
-    name: "TypeScript",
-    src: "/images/typescript-logo.svg",
-    alt: "TypeScript",
-    width: 106,
-    height: 100,
-  },
-  {
-    name: "GraphQL",
-    src: "/images/GraphQL-Logo.svg",
-    alt: "GraphQL",
-    width: 106,
-    height: 100,
-  },
-  {
-    name: "React",
-    src: "/images/reactjs-logo.svg",
-    alt: "React",
-    width: 106,
-    height: 100,
-  },
   {
     name: "Laravel",
     src: "/images/laravel-logo.svg",
