@@ -107,9 +107,12 @@ const HomePage: NextPage = () => {
                   I have a strong understanding of HTML, CSS, JavaScript, and a
                   basic knowledge of PHP and MySQL, allowing me to integrate
                   advanced functionalities and manage diverse web development
-                  tasks. My experience extends to handling WordPress and
-                  WooCommerce hooks, troubleshooting WordPress issues, and
-                  managing hosting via cPanel.
+                  tasks. My experience extends to customizing WordPress and
+                  WooCommerce sites with WordPress and WooCommerce hooks,
+                  troubleshooting WordPress issues, and managing hosting via
+                  cPanel. I also specialize in creating WordPress headless CMS
+                  setups using the WPGraphQL plugin and rendering the frontend
+                  with Next.js.
                 </p>
                 <p>
                   Additionally, I focus on on-page SEO using Rank Math,
