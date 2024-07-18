@@ -696,7 +696,7 @@ export const projects = [
     },
     screenshot_link:
       "https://drive.google.com/drive/folders/1mDeSZJgpcVsZcSUgeCYce2Nh8wuyQqlS",
-    demo_link: "",
+    demo_link: "https://elizabethimagebranding.com/",
     tech_stack: [
       {
         logo: "/images/wordpress-logo.svg",
