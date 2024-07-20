@@ -8,6 +8,7 @@ import {
   Label,
   TextInput,
   Textarea,
+  Flowbite,
 } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -16,9 +17,11 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import useContactForm from "../../hooks/useContactForm";
 import sendEmail from "../../services/sendEmail";
+import ButtonTheme from "../themes/flowbite-react/ButtonTheme";
 
 export default function ContactForm() {
   const { values, handleChange, resetForm } = useContactForm();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMessage, setResponseMessage] = useState({
     isSuccessful: false,
     message: "",
@@ -26,6 +29,9 @@ export default function ContactForm() {
 
   const handleSubmit = async (e: any) => {
     e.preventDefault();
+
+    setIsSubmitting(true);
+
     try {
       const req = await sendEmail({
         name: values.name,
@@ -39,11 +45,15 @@ export default function ContactForm() {
         });
 
         resetForm();
+
+        setIsSubmitting(false);
       } else {
         setResponseMessage({
           isSuccessful: false,
           message: "Oops something went wrong sending this message.",
         });
+
+        setIsSubmitting(false);
       }
     } catch (e) {
       console.log(e);
@@ -51,6 +61,8 @@ export default function ContactForm() {
         isSuccessful: false,
         message: "Oops something went wrong. Please try again.",
       });
+
+      setIsSubmitting(false);
     }
   };
 
@@ -115,12 +127,16 @@ export default function ContactForm() {
             className="font-open-sans"
           />
         </div>
-        <Button
-          type="submit"
-          className="w-full border border-black bg-neutral-700 font-montserrat font-bold uppercase text-white transition ease-in-out enabled:hover:bg-cyan-700"
-        >
-          Submit
-        </Button>
+        <Flowbite theme={{ theme: ButtonTheme }}>
+          <Button
+            type="submit"
+            fullSized
+            color="primary"
+            isProcessing={isSubmitting ? true : false}
+          >
+            {!isSubmitting ? "Submit" : "Submitting"}
+          </Button>
+        </Flowbite>
       </form>
       {responseMessage.message && (
         <Toast className="fixed bottom-4 left-1/2 z-10 m-0 w-4/5 max-w-none -translate-x-1/2 p-4 md:w-auto">
