@@ -7,6 +7,9 @@ const ButtonTheme: CustomFlowbiteTheme = {
       primary:
         "border border-black bg-neutral-700 font-montserrat font-bold uppercase text-white transition ease-in-out enabled:hover:bg-cyan-700",
     },
+    inner: {
+      base: "flex items-stretch transition-all duration-200 relative",
+    },
   },
 };
 
