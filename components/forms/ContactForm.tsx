@@ -27,7 +27,11 @@ export default function ContactForm() {
   const handleSubmit = async (e: any) => {
     e.preventDefault();
     try {
-      const req = await sendEmail(values.name, values.email, values.message);
+      const req = await sendEmail({
+        name: values.name,
+        email: values.email,
+        message: values.message,
+      });
       if (req.status === 250) {
         setResponseMessage({
           isSuccessful: true,
