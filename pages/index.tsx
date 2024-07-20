@@ -19,7 +19,7 @@ const HomePage: NextPage = () => {
     <div className="page-content">
       <CustomHead
         title="John Lomat | WordPress & WooCommerce Expert"
-        description="Expert WordPress developer specializing in custom websites, WooCommerce, Elementor, Divi, ACF, and SEO optimization. Proven track record with 26 websites delivered."
+        description="Expert WordPress developer specializing in custom websites, WooCommerce, Elementor, Divi, ACF, and SEO. Proven track record with 26 websites delivered."
         keywords="WordPress CMS, WordPress website development, WooCommerce setup, Divi page builder, Elementor page builder, Responsive web design, Mobile-friendly websites, Website responsiveness, Mobile optimization, Online store setup with WooCommerce, E-commerce solutions with WooCommerce, WooCommerce store customization, Creating landing pages with Elementor, Elementor drag-and-drop builder, WordPress migration services, WordPress support and updates"
       />
 
