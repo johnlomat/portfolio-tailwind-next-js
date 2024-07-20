@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PropTypes from "prop-types";
+import { useRouter } from "next/router";
 
 const CustomHead = ({
   title,
@@ -10,6 +10,11 @@ const CustomHead = ({
   description: string;
   keywords?: string;
 }) => {
+  const siteUrl = process.env.SITE_URL;
+  const router = useRouter();
+  const canonicalUrl =
+    siteUrl + `${router.asPath === "/" ? "" : router.pathname}/`;
+
   return (
     <Head>
       <title>{title}</title>
@@ -59,14 +64,10 @@ const CustomHead = ({
         href="/images/favicon-16x16.png"
       />
       <link rel="manifest" href="/images/site.webmanifest" />
+
+      <link rel="canonical" href={canonicalUrl} />
     </Head>
   );
-};
-
-CustomHead.propTypes = {
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  keywords: PropTypes.string,
 };
 
 export default CustomHead;
