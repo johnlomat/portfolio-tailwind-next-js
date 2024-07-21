@@ -139,6 +139,43 @@ export const projects = [
     ],
   },
   {
+    title: "Pivot Point",
+    description:
+      "The landing page was built using WordPress and the Divi theme to create a visually appealing and highly functional website. The focus was on developing a compelling user experience and engaging content that speaks to business owners looking to revitalize their services.",
+    type: "Landing page",
+    scope_list_html:
+      "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Pivot Point's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Interactive Application Forms</strong>: Integrating Ninja form builder plugin, I developed user-friendly application forms with advanced customization options, streamlining the application process and capturing essential candidate information accurately.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, enhancing overall performance and user engagement.</li>",
+    image: {
+      full: "/images/project-screenshots/Pivot-Point.jpeg",
+      alt_text: "Pivot Point Portfolio Thumbnail",
+    },
+    screenshot_link:
+      "https://drive.google.com/drive/folders/15YpNFfQWRSXs71PMcOdVobyFxuDvyDKl?usp=drive_link",
+    demo_link: "https://landingpage.dahreply.ai/",
+    tech_stack: [
+      {
+        logo: "/images/wordpress-logo.svg",
+        title: "WordPress",
+      },
+      {
+        logo: "/images/divi-logo.svg",
+        title: "Divi",
+      },
+      {
+        logo: "/images/php-logo.svg",
+        title: "PHP",
+      },
+      {
+        logo: "/images/mysql-logo.svg",
+        title: "MySQL",
+      },
+      {
+        logo: "/images/jquery-logo.svg",
+        title: "jQuery",
+      },
+    ],
+  },
+  {
     title: "Wawasan Open University",
     description:
       "Wawasan Open University (WOU) approached us with the goal of revamping their existing website to enhance user experience, streamline content management, and improve overall performance. As a premier institution of higher learning in Malaysia, WOU required a modern, user-friendly website that reflects its academic excellence and commitment to accessible education.",
@@ -181,7 +218,7 @@ export const projects = [
       "The Experior Semiconductor Test Engineering Portfolio Website is a collaborative effort between Experior and myself to develop a visually appealing and informative platform showcasing Experior's expertise in semiconductor testing. Utilizing WordPress as the Content Management System (CMS) and the Divi theme builder, this project aims to highlight Experior's capabilities and achievements in the semiconductor industry.",
     type: "Business website",
     scope_list_html:
-      "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Menicon's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Dynamic Job Listings with CPT UI</strong>: Using CPT UI, I created custom post types for job listings, allowing Menicon's HR team to effortlessly manage and update job openings directly from the WordPress dashboard. This dynamic functionality enhances the website's scalability and maintenance efficiency.</li><li><strong>Interactive Application Forms</strong>: Integrating Ninja form builder plugin, I developed user-friendly application forms with advanced customization options, streamlining the application process and capturing essential candidate information accurately.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, enhancing overall performance and user engagement.</li>",
+      "<li><strong>Custom Divi Layouts</strong>: Leveraging the flexibility of Divi's drag-and-drop builder, I designed custom layouts tailored to Experior's branding guidelines, ensuring a cohesive and visually appealing website.</li><li><strong>Responsive Design</strong>: With a focus on mobile optimization, I implemented responsive design principles to ensure seamless functionality and visual consistency across all devices, optimizing user experience and accessibility.</li><li><strong>Interactive Application Forms</strong>: Integrating Ninja form builder plugin, I developed user-friendly application forms with advanced customization options, streamlining the application process and capturing essential candidate information accurately.</li><li><strong>Visual Content Optimization</strong>: Employing image optimization techniques and lazy loading functionality, I ensured fast loading times and minimized page load impact, enhancing overall performance and user engagement.</li>",
     image: {
       full: "/images/project-screenshots/Experior.jpg",
       alt_text: "Experior Portfolio Thumbnail",
