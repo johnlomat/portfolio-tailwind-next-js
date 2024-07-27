@@ -1,43 +1,43 @@
-"use client";
+'use client'
 
-import Image from "next/image";
-import Link from "next/link";
-import { Open_Sans, Montserrat } from "next/font/google";
-import { Button, Modal, Tooltip, Flowbite } from "flowbite-react";
-import TooltipTheme from "../themes/flowbite-react/TooltipTheme";
-import { useState } from "react";
+import Image from 'next/image'
+import Link from 'next/link'
+import { Open_Sans, Montserrat } from 'next/font/google'
+import { Button, Modal, Tooltip, Flowbite } from 'flowbite-react'
+import TooltipTheme from '../themes/flowbite-react/TooltipTheme'
+import { useState } from 'react'
 
 const montserrat = Montserrat({
-  subsets: ["latin"],
-  display: "swap",
-});
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const open_sans = Open_Sans({
-  subsets: ["latin"],
-  display: "swap",
-});
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 interface Project {
-  title: string;
-  description: string;
-  scope_list_html: string;
-  demo_link: string;
-  screenshot_link: string;
-  type: string;
-  tech_stack: { logo: string; title: string }[];
-  image?: { full: string; alt_text: string };
+  title: string
+  description: string
+  scope_list_html: string
+  demo_link: string
+  screenshot_link: string
+  type: string
+  tech_stack: { logo: string; title: string }[]
+  image?: { full: string; alt_text: string }
 }
 
 const ProjectCard = ({ project }: { project: any }) => {
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null)
 
   const handleOpenModal = (project: any) => {
-    setSelectedProject(project);
-  };
+    setSelectedProject(project)
+  }
 
   const handleCloseModal = () => {
-    setSelectedProject(null);
-  };
+    setSelectedProject(null)
+  }
 
   const TechStack = ({ logo, title }: { logo: string; title: string }) => (
     <div className="relative flex items-center justify-center">
@@ -47,7 +47,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         </Tooltip>
       </Flowbite>
     </div>
-  );
+  )
 
   const ProjectModal = ({
     title,
@@ -69,26 +69,18 @@ const ProjectCard = ({ project }: { project: any }) => {
             <div>{description}</div>
           </div>
           <div className="w-full">
-            <div className={`${montserrat.className} uppercase text-cyan-700`}>
-              Type
-            </div>
+            <div className={`${montserrat.className} uppercase text-cyan-700`}>Type</div>
             <div>{type}</div>
           </div>
           <div className="w-full">
-            <div className={`${montserrat.className} uppercase text-cyan-700`}>
-              Key Features
-            </div>
+            <div className={`${montserrat.className} uppercase text-cyan-700`}>Key Features</div>
             <ul
               dangerouslySetInnerHTML={{ __html: scope_list_html }}
               className="list-disc space-y-1 ps-[1.25rem]"
             />
           </div>
           <div className="w-full">
-            <div
-              className={`${montserrat.className} mb-1 uppercase text-cyan-700`}
-            >
-              Tech Stack
-            </div>
+            <div className={`${montserrat.className} mb-1 uppercase text-cyan-700`}>Tech Stack</div>
             <div className="grid grid-cols-4 flex-wrap gap-6 md:grid-cols-8">
               {tech_stack.map((tech, index) => (
                 <TechStack key={index} {...tech} />
@@ -116,15 +108,15 @@ const ProjectCard = ({ project }: { project: any }) => {
           rel="noopener noreferrer"
           className={`${montserrat.className} ${
             demo_link
-              ? "border border-gray-200 bg-white uppercase text-gray-900 hover:border-gray-300 hover:bg-gray-200"
-              : "border border-black bg-cyan-700 font-montserrat font-bold uppercase text-white transition ease-in-out hover:bg-cyan-900"
+              ? 'border border-gray-200 bg-white uppercase text-gray-900 hover:border-gray-300 hover:bg-gray-200'
+              : 'border border-black bg-cyan-700 font-montserrat font-bold uppercase text-white transition ease-in-out hover:bg-cyan-900'
           }`}
         >
           Screenshot
         </Button>
       </Modal.Footer>
     </Modal>
-  );
+  )
 
   return (
     <>
@@ -162,7 +154,7 @@ const ProjectCard = ({ project }: { project: any }) => {
         />
       )}
     </>
-  );
-};
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

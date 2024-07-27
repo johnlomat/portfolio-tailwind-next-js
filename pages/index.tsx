@@ -1,18 +1,14 @@
-import type { NextPage } from "next";
-import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faLinkedin,
-  faCodepen,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
-import CustomHead from "../components/CustomHead";
-import Separator from "../components/ui/Separator";
-import ContactForm from "../components/forms/ContactForm";
-import { HeadingTwo } from "../components/ui/HeadingPreset";
-import SkillsSection from "../components/sections/SkillsSection";
-import ProjectsSection from "../components/sections/ProjectsSection";
+import type { NextPage } from 'next'
+import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin, faCodepen, faGithub } from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link'
+import CustomHead from '../components/CustomHead'
+import Separator from '../components/ui/Separator'
+import ContactForm from '../components/forms/ContactForm'
+import { HeadingTwo } from '../components/ui/HeadingPreset'
+import SkillsSection from '../components/sections/SkillsSection'
+import ProjectsSection from '../components/sections/ProjectsSection'
 
 const HomePage: NextPage = () => {
   return (
@@ -28,7 +24,7 @@ const HomePage: NextPage = () => {
           <div className="bg-top-center absolute bottom-0 left-0 flex w-full items-center bg-[url('/images/rectangle-82.svg')] bg-cover bg-no-repeat px-4 py-[15%] md:static md:bottom-auto md:left-auto md:w-1/2 md:bg-none md:p-0">
             <div className="relative flex w-full flex-col pe-12 pt-[5.625rem] font-raleway md:w-auto md:p-0">
               <h1 className="mb-0 text-[1.25rem] font-bold text-white md:mb-4 md:text-[2.5rem] md:text-neutral-900">
-                Hi, I am{" "}
+                Hi, I am{' '}
                 <span className="mt-0 block text-[2.1875rem] leading-none md:mt-12 md:text-[5rem]">
                   John Lomat
                 </span>
@@ -95,31 +91,26 @@ const HomePage: NextPage = () => {
               <HeadingTwo title="About me" />
               <div className="w-full max-w-[46.875rem] text-center font-open-sans text-[1.0625rem]">
                 <p className="mb-4">
-                  I&apos;m John Lomat, an expert in WordPress and WooCommerce
-                  development with over 5 years of experience. My skill set
-                  includes extensive proficiency with Elementor, Divi, Bootstrap
-                  5, SASS, jQuery, Tailwind CSS, Next.js, and Advanced Custom
-                  Fields (ACF). I excel in transforming mock-up designs into
-                  fully functional, responsive websites that provide excellent
-                  performance and user experience.
+                  I&apos;m John Lomat, an expert in WordPress and WooCommerce development with over
+                  5 years of experience. My skill set includes extensive proficiency with Elementor,
+                  Divi, Bootstrap 5, SASS, jQuery, Tailwind CSS, Next.js, and Advanced Custom Fields
+                  (ACF). I excel in transforming mock-up designs into fully functional, responsive
+                  websites that provide excellent performance and user experience.
                 </p>
                 <p className="mb-4">
-                  I have a strong understanding of HTML, CSS, JavaScript, and a
-                  basic knowledge of PHP and MySQL, allowing me to integrate
-                  advanced functionalities and manage diverse web development
-                  tasks. My experience extends to customizing WordPress and
-                  WooCommerce sites with WordPress and WooCommerce hooks,
-                  troubleshooting WordPress issues, and managing hosting via
-                  cPanel. I also specialize in creating WordPress headless CMS
-                  setups using the WPGraphQL plugin and rendering the frontend
-                  with Next.js.
+                  I have a strong understanding of HTML, CSS, JavaScript, and a basic knowledge of
+                  PHP and MySQL, allowing me to integrate advanced functionalities and manage
+                  diverse web development tasks. My experience extends to customizing WordPress and
+                  WooCommerce sites with WordPress and WooCommerce hooks, troubleshooting WordPress
+                  issues, and managing hosting via cPanel. I also specialize in creating WordPress
+                  headless CMS setups using the WPGraphQL plugin and rendering the frontend with
+                  Next.js.
                 </p>
                 <p>
-                  Additionally, I focus on on-page SEO using Rank Math,
-                  implementing security with the WP All-in-One Security plugin,
-                  and optimizing page performance. My services also include
-                  website maintenance, such as fixing broken links, to ensure
-                  ongoing site health and efficiency.
+                  Additionally, I focus on on-page SEO using Rank Math, implementing security with
+                  the WP All-in-One Security plugin, and optimizing page performance. My services
+                  also include website maintenance, such as fixing broken links, to ensure ongoing
+                  site health and efficiency.
                 </p>
               </div>
             </div>
@@ -145,7 +136,7 @@ const HomePage: NextPage = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default HomePage;
+export default HomePage

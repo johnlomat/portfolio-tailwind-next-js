@@ -1,19 +1,19 @@
-import Image from "next/image";
-import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Image from 'next/image'
+import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear()
 
   // Function to handle smooth scroll to top
   const handleScrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
-    });
-  };
+      behavior: 'smooth',
+    })
+  }
 
   return (
     <footer className="bg-neutral-900 py-12 font-montserrat">
@@ -40,10 +40,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full hover:bg-white/30"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-[2rem] text-white"
-            />
+            <FontAwesomeIcon icon={faLinkedin} className="text-[2rem] text-white" />
           </a>
           <a
             href="https://www.upwork.com/freelancers/~01bf699b1e5f882641"
@@ -51,12 +48,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full hover:bg-white/30"
           >
-            <Image
-              src="/images/upwork-logo.svg"
-              alt="Upwork logo"
-              width={30}
-              height={21}
-            />
+            <Image src="/images/upwork-logo.svg" alt="Upwork logo" width={30} height={21} />
           </a>
           <a
             href="https://www.onlinejobs.ph/jobseekers/info/1267464"
@@ -90,38 +82,28 @@ const Footer = () => {
             href="mailto:edwardlomat1503@gmail.com"
             className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full hover:bg-white/30"
           >
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              className="text-[2rem] text-white"
-            />
+            <FontAwesomeIcon icon={faEnvelope} className="text-[2rem] text-white" />
           </a>
         </div>
         <div className="w-full">
           <div className="text-center text-white">
-            <Link
-              href="/terms-of-use"
-              className="hover:text-gray-300 hover:underline"
-            >
+            <Link href="/terms-of-use" className="hover:text-gray-300 hover:underline">
               Terms of Use
-            </Link>{" "}
-            |{" "}
-            <Link
-              href="/privacy-policy"
-              className="hover:text-gray-300 hover:underline"
-            >
+            </Link>{' '}
+            |{' '}
+            <Link href="/privacy-policy" className="hover:text-gray-300 hover:underline">
               Privacy Policy
             </Link>
           </div>
         </div>
         <div className="w-full">
           <div className="text-center text-white">
-            <span className="font-bold">&copy; {currentYear} John Lomat</span>{" "}
-            All Rights Reserved.
+            <span className="font-bold">&copy; {currentYear} John Lomat</span> All Rights Reserved.
           </div>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

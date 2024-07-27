@@ -1,84 +1,66 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import {
-  Toast,
-  ToastToggle,
-  Button,
-  Label,
-  TextInput,
-  Textarea,
-  Flowbite,
-} from "flowbite-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCircleCheck,
-  faCircleXmark,
-} from "@fortawesome/free-solid-svg-icons";
-import useContactForm from "../../hooks/useContactForm";
-import sendEmail from "../../services/sendEmail";
-import ButtonTheme from "../themes/flowbite-react/ButtonTheme";
+import { useState } from 'react'
+import { Toast, ToastToggle, Button, Label, TextInput, Textarea, Flowbite } from 'flowbite-react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleCheck, faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+import useContactForm from '../../hooks/useContactForm'
+import sendEmail from '../../services/sendEmail'
+import ButtonTheme from '../themes/flowbite-react/ButtonTheme'
 
 export default function ContactForm() {
-  const { values, handleChange, resetForm } = useContactForm();
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { values, handleChange, resetForm } = useContactForm()
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [responseMessage, setResponseMessage] = useState({
     isSuccessful: false,
-    message: "",
-  });
+    message: '',
+  })
 
   const handleSubmit = async (e: any) => {
-    e.preventDefault();
+    e.preventDefault()
 
-    setIsSubmitting(true);
+    setIsSubmitting(true)
 
     try {
       const req = await sendEmail({
         name: values.name,
         email: values.email,
         message: values.message,
-      });
+      })
       if (req.status === 250) {
         setResponseMessage({
           isSuccessful: true,
-          message: "Thank you for your message.",
-        });
+          message: 'Thank you for your message.',
+        })
 
-        resetForm();
+        resetForm()
 
-        setIsSubmitting(false);
+        setIsSubmitting(false)
       } else {
         setResponseMessage({
           isSuccessful: false,
-          message: "Oops something went wrong sending this message.",
-        });
+          message: 'Oops something went wrong sending this message.',
+        })
 
-        setIsSubmitting(false);
+        setIsSubmitting(false)
       }
     } catch (e) {
-      console.log(e);
+      console.log(e)
       setResponseMessage({
         isSuccessful: false,
-        message: "Oops something went wrong. Please try again.",
-      });
+        message: 'Oops something went wrong. Please try again.',
+      })
 
-      setIsSubmitting(false);
+      setIsSubmitting(false)
     }
-  };
+  }
 
   return (
     <div className="flex w-full max-w-[31.25rem] flex-col items-center justify-center space-y-6">
-      <form
-        onSubmit={handleSubmit}
-        className="w-full rounded bg-white p-8 uppercase shadow-md"
-      >
+      <form onSubmit={handleSubmit} className="w-full rounded bg-white p-8 uppercase shadow-md">
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label
-              htmlFor="name"
-              value="Name"
-              className="font-montserrat font-bold"
-            />
+            <Label htmlFor="name" value="Name" className="font-montserrat font-bold" />
           </div>
           <TextInput
             type="text"
@@ -92,11 +74,7 @@ export default function ContactForm() {
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label
-              htmlFor="email"
-              value="Email"
-              className="font-montserrat font-bold"
-            />
+            <Label htmlFor="email" value="Email" className="font-montserrat font-bold" />
           </div>
           <TextInput
             type="email"
@@ -110,11 +88,7 @@ export default function ContactForm() {
         </div>
         <div className="mb-4">
           <div className="mb-2 block">
-            <Label
-              htmlFor="message"
-              value="Message"
-              className="font-montserrat font-bold"
-            />
+            <Label htmlFor="message" value="Message" className="font-montserrat font-bold" />
           </div>
           <Textarea
             name="message"
@@ -134,7 +108,7 @@ export default function ContactForm() {
             color="primary"
             isProcessing={isSubmitting ? true : false}
           >
-            {!isSubmitting ? "Submit" : "Submitting"}
+            {!isSubmitting ? 'Submit' : 'Submitting'}
           </Button>
         </Flowbite>
       </form>
@@ -142,14 +116,12 @@ export default function ContactForm() {
         <Toast className="fixed bottom-4 left-1/2 z-10 m-0 w-4/5 max-w-none -translate-x-1/2 p-4 md:w-auto">
           <FontAwesomeIcon
             icon={responseMessage.isSuccessful ? faCircleCheck : faCircleXmark}
-            className={`text-2xl ${responseMessage.isSuccessful ? "text-green-400" : "text-red-600"}`}
+            className={`text-2xl ${responseMessage.isSuccessful ? 'text-green-400' : 'text-red-600'}`}
           />
-          <div className="mx-3 font-open-sans text-sm">
-            {responseMessage.message}
-          </div>
+          <div className="mx-3 font-open-sans text-sm">{responseMessage.message}</div>
           <ToastToggle className="flex items-center justify-center" />
         </Toast>
       )}
     </div>
-  );
+  )
 }

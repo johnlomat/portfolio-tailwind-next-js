@@ -1,9 +1,9 @@
-import type { CustomFlowbiteTheme } from "flowbite-react";
+import type { CustomFlowbiteTheme } from 'flowbite-react'
 
 const TooltipTheme: CustomFlowbiteTheme = {
   tooltip: {
-    content: "relative z-20 whitespace-nowrap",
+    content: 'relative z-20 whitespace-nowrap',
   },
-};
+}
 
-export default TooltipTheme;
+export default TooltipTheme

@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { usingNow, learning, otherSkills } from "../../data/skills";
-import { HeadingTwo } from "../ui/HeadingPreset";
+import Image from 'next/image'
+import { usingNow, learning, otherSkills } from '../../data/skills'
+import { HeadingTwo } from '../ui/HeadingPreset'
 
 const SkillItem = ({
   src,
@@ -9,11 +9,11 @@ const SkillItem = ({
   height,
   name,
 }: {
-  src: string;
-  alt: string;
-  width: number;
-  height: number;
-  name: string;
+  src: string
+  alt: string
+  width: number
+  height: number
+  name: string
 }) => (
   <div className="flex w-1/2 flex-col items-center p-[0.9375rem] sm:p-0 md:w-1/3 lg:w-1/4">
     <div className="mb-4 flex h-[6.25rem] w-[6.25rem] items-center justify-center">
@@ -21,7 +21,7 @@ const SkillItem = ({
     </div>
     <span className="text-center uppercase text-[#212121]">{name}</span>
   </div>
-);
+)
 
 const SkillsSection = () => (
   <section className="py-24 font-montserrat" id="skills">
@@ -64,6 +64,6 @@ const SkillsSection = () => (
       </div>
     </div>
   </section>
-);
+)
 
-export default SkillsSection;
+export default SkillsSection

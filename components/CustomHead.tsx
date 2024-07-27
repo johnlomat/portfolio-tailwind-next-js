@@ -1,29 +1,25 @@
-import Head from "next/head";
-import { useRouter } from "next/router";
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 const CustomHead = ({
   title,
   description,
   keywords,
 }: {
-  title: string;
-  description: string;
-  keywords?: string;
+  title: string
+  description: string
+  keywords?: string
 }) => {
-  const siteUrl = process.env.SITE_URL;
-  const router = useRouter();
-  const canonicalUrl =
-    siteUrl + `${router.asPath === "/" ? "" : router.pathname}/`;
+  const siteUrl = process.env.SITE_URL
+  const router = useRouter()
+  const canonicalUrl = siteUrl + `${router.asPath === '/' ? '' : router.pathname}/`
 
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
       {keywords && <meta name="keywords" content={keywords} />}
-      <meta
-        name="google-site-verification"
-        content="O9Fqju7f6cW3gK_PGBAX3w5xL0rvMKqtuwFLeQoPIxY"
-      />
+      <meta name="google-site-verification" content="O9Fqju7f6cW3gK_PGBAX3w5xL0rvMKqtuwFLeQoPIxY" />
 
       {/* Facebook meta tags */}
       <meta property="og:url" content="https://johnlomat.vercel.app/" />
@@ -46,28 +42,14 @@ const CustomHead = ({
       />
 
       {/* Favicon */}
-      <link
-        rel="apple-touch-icon"
-        sizes="180x180"
-        href="/images/apple-touch-icon.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="32x32"
-        href="/images/favicon-32x32.png"
-      />
-      <link
-        rel="icon"
-        type="image/png"
-        sizes="16x16"
-        href="/images/favicon-16x16.png"
-      />
+      <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png" />
       <link rel="manifest" href="/images/site.webmanifest" />
 
       <link rel="canonical" href={canonicalUrl} />
     </Head>
-  );
-};
+  )
+}
 
-export default CustomHead;
+export default CustomHead
