@@ -34,7 +34,7 @@ The website is deployed using Vercel, ensuring seamless deployment and hosting w
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-github-username/your-portfolio.git
+   git clone https://github.com/johnlomat/portfolio-tailwind-next-js.git
    cd your-portfolio
    ```
 
