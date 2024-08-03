@@ -25,7 +25,7 @@ const HomePage: NextPage = () => {
             <div className="relative flex w-full flex-col pe-12 pt-[5.625rem] font-raleway md:w-auto md:p-0">
               <h1 className="mb-0 text-[1.25rem] font-bold text-white md:mb-4 md:text-[2.5rem] md:text-neutral-900">
                 Hi, I am{' '}
-                <span className="mt-0 block text-[2.1875rem] leading-none md:mt-12 md:text-[5rem]">
+                <span className="mt-0 block text-[2.1875rem] leading-none md:mt-6 md:text-[5rem]">
                   John Lomat
                 </span>
               </h1>
