@@ -26,4 +26,4 @@
 
 ## Deployment
 
-The website is deployed using Vercel, ensuring seamless deployment and hosting with automatic deployments from GitHub. You can visit the deployed project [here](https://johnlomat.vercel.app/).
+The website is deployed using Vercel, ensuring seamless deployment and hosting with automatic deployments from GitHub. You can visit the deployed project [here](https://portfolio-tailwind-next-js.vercel.app/).
