@@ -3,12 +3,11 @@
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Deployment](#deployment)
-- [Setup Instructions](#setup-instructions)
 
 ## Features
 
 - **Responsive Design**: Ensures optimal viewing experience across a wide range of devices.
-- **Dynamic Routing**: Utilizes Next.js for client-side routing and server-side rendering.
+- **Dynamic Routing**: Utilizes Next.js page router for client-side routing and server-side rendering.
 - **Tailwind CSS**: Provides a utility-first CSS framework for fast and responsive design.
 - **API Integration**: Integrates with APIs for contact forms and other dynamic functionalities.
 - **SEO Optimization**: Enhances visibility with optimized metadata and page titles.
@@ -28,28 +27,3 @@
 ## Deployment
 
 The website is deployed using Vercel, ensuring seamless deployment and hosting with automatic deployments from GitHub. You can visit the deployed project [here](https://johnlomat.vercel.app/).
-
-## Setup Instructions
-
-1. **Clone the repository**:
-
-   ```bash
-   git clone https://github.com/johnlomat/portfolio-tailwind-next-js.git
-   cd your-portfolio
-   ```
-
-2. **Install dependencies**:
-
-   ```bash
-   npm install
-   ```
-
-3. **Run the development server**:
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open the browser**:
-
-   Open [http://localhost:3000](http://localhost:3000) to view the project in the browser.
