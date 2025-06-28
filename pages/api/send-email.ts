@@ -13,7 +13,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   const mailOptions = {
-    from: 'Website Inquiry <no-reply@headlesspress.xyz>',
+    from: 'Website Inquiry <no-reply@johnquery.com>',
     to: 'edwardlomat1503@gmail.com',
     replyTo: email,
     subject: `New inquiry from ${name}`,
@@ -24,12 +24,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: Number(process.env.SMTP_PORT),
+    secure: false,
     auth: {
       user: process.env.SMTP_USERNAME,
       pass: process.env.SMTP_PASSWORD,
-    },
-    tls: {
-      rejectUnauthorized: false, // This can help with self-signed certificates, remove if not needed
     },
   })
 
