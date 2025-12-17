@@ -17,7 +17,7 @@
     "@next/third-parties": "^14.2.4",
     "axios": "^1.7.2",
     "flowbite-react": "^0.10.1",
-    "next": "^14.2.4",
+    "next": "14.2.35",
     "nodemailer": "^6.9.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
